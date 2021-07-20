@@ -1,0 +1,133 @@
+
+
+
+05/06/2021 - Casting
+
+Casting is like converting
+int -> double (when we want to get floating point)
+double -> int (when we want to get rid of floating point)
+
+int i1 = 15, i2 = 2;
+
+double result = (double)i1/i2; // 7.5
+
+$390 save -> you save $15.60
+double d1 = 390, d2 = 15.60;
+int days = (int)d1/d2; -> 25
+
+I can save $390 in 25 days
+
+
+double to float -> explicit - narrowing - downcasting
+int to short -> explicit - narrowing - downcasting
+long to byte -> explicit - narrowing - downcasting
+float to double -> implicit - widening - upcasting
+short to long -> implicit - widening - upcasting
+
+char to int -> implicit - widening - upcasting
+int to char -> explicit - narrowing - downcasting
+
+double to long -> explicit
+long to double -> implicit
+
+float to long -> explicit
+long to float -> implicit
+
+NOTE: boolean is out of discussion when it is casting
+It cannot be casted to any other primitive or visa versa
+
+-Casting can happen only bt primitives
+-Converting can happen bt primitives and objects (reference types)
+
+
+String numberOfStudents = "23"; // text
+
+
+CASTING
+-known as assigning value of one primitive into another
+-it happens bt primitives
+-boolean cannot be casted to any other primitives and visa versa
+-2 types
+1.Implicit casting: automatically happens
+	-widening, up-casting
+2.Explicit casting: manually happens
+	-narrowing, down-casting
+
+
+Widening Casting (automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double
+
+Narrowing Casting (manually - explicitly) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char -> short -> byte
+
+
+CASTING CHARACTERS
+-casting char to int happens implicitly
+-casting int to char happens explicitly
+
+
+CONVERTION BT STRING AND PRIMITIVES
+1. Primitives to String
+-We can convert any data type to a String
+-Using + (concatenation), will convert any data type to a String
+-Or String.valueOf(variable) can be used
+
+2. String to Primitives
+-We can convert String to related primitive by using their Wrapper classes
+-valueOf() and parseType() methods can be used for the conversion
+
+-Difference between valueOf and parse methods?
+valueOf() - converts to Wrapper - Object
+parseType() - converts to primitive
+
+WRAPPER CLASSES
+-Object representation of primitives
+Primitives  Wrapper Classes
+byte 		Byte
+short		Short
+int 		Integer
+long		Long
+float 		Float
+double 		Double
+char 		Character
+boolean 	Boolean
+
+-primitives are used to store a piece data
+-Wrapper classes can also store data, and can do all the job that primitives do
+-AND, wrapper classes are objects and they also provide useful methods and variables for us to use
+-PRIMITIVES CANNOT PROVIDE ANY METHOD
+
+-valueOf() method is used to convert data type to wrapper
+-parseType() method is used to convert data to primitive
+-toString() method is used to convert
+
+
+
+AUTOBOXING AND UNBOXING
+-Autoboxing is known as storing primitive type into object/wrapper class
+	EXAMPLE:
+	int num1 = 45: 
+	Integer num2 = num1; 
+
+-Unboxing is known as storing object/wrapper class into primitive
+	EXAMPLE:
+	Character character1 = ‘t’; //object char character2 = character1;    //primitive
+
+
+- var keyword
+Examples:
+var  a1 = "Toyota"; 	//-> String
+var  a2 = 45; 			//-> int
+var  a3 = 34.50; 		//-> double
+var  a4 = 'X'; 			//-> char
+var  a5 = false; 		//-> boolean
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+
+
+
+06/20/2021 - OOP Part 1 - Attributes and Methods
+
+RECAP:
+
+OOP - Object-Oriented Programming
+-Java is an Object-Oriented Programming
+-It puts real life problems into smaller objects and bring a solution to those. 
+-In Java, we have a lot of packages and classes in those packages. It allows us to create object of given classes and create programs
+
+-AND, we can also create our own custom classes and objects (instances) of these classes
+
+Company, Employee, Department, HR, IT
+
+Tesla -> Engine, Model, Sales, 
+
+
+CLASS - OBJECT
+Class: blueprint or template allows us to create objects
+Object: instance of class
+
+class ClassName{
+	//attributes, methods, blocks, constructor
+}
+
+ClassName varName = new ClassName();
+
+
+CLASS MEMBERS
+1.Attributes - instance variables -> they are used to define what a class has
+2.Methods -> they are used to define what a class object does
+3.Constructor -> are also special kind of methods that are used to create objects of the class
+4.Blocks -> they are used to run a specific code of block before everything else
+
+
+
+CLASS ATTRIBUTES - INSTANCE VARIABLES
+-they are used to define what a class has as features
+-instance variables are used to store/keep data
+-instance variables are accessed mostly with objects
+
+
+final and static keywords
+-static methods and static attributes
+-When you make a method or instance variable static, it means these members belongs to class not to class objects
+-non-static instance variables and methods belongs to objects of the class
+
+
+-final can be used to make some information fixed and these information cannot be changed anywhere else
+Integer.MAX_VALUE
+Integer.MIN_VALUE
+
+NOTE: When you make an instance variable final, then you need to initialize it. Otherwise, it is compiler error
+The final keyword is useful when you want a variable to always store the same value, like PI (3.14159...) or daysInAWeek (7)
+
+
+DOES IT BELONG TO CLASS?
+Yes -> static (belongs to class)
+No -> non-static (belongs to object)
+
+IS IT UNIVERSAL, TRUE IN ANY CASE?
+Yes -> final (should not be changed)
+No -> it is not final (can be changed)
+
+
+STATIC AND FINAL KEYWORDS ARE NOT USED ONLY WITH INSTANCE VARIABLES
+
+final method
+final class
+
+
+class Phone{
+	static int totalNumberOfPhones = 1000;
+
+
+	static void sell(){
+		System.out.println("1 Phone is sold!")
+		totalNumberOfPhones -= 1;
+		showOutOfStockMessage();
+	}
+
+	static void showOutOfStockMessage(){
+		if(totalNumberOfPhones == 0){
+			//block of code to show out of stock message
+		}
+	}
+}
+
+class Test{
+	public static void main(String[] arg){
+		Phone.sell(); //1 Phone is sold!
+		System.out.println(Phone.totalNumberOfPhones);
+	}
+}
+
+
+Class -> Animal
+Objects -> Cat, Dog, Lion, Elephant, Tiger, Fish, Mouse
+
+
+toString(Animal animal) method created in Animal class
+-it is a static method, so can be called with Animal class name
+-it is a return type and it returns a String
+-it takes an argument which is Animal object
+-IT TAKES ANIMAL OBJECT, CONVERTS IT TO A STRING AND RETURNS THAT STRING
+
+
+
+
+Class members: attribute, method, constructor, block
+
+
+-final attribute cannot be changed anywhere
+-static methods and attributes belongs class
+-non-static methods and attributes belongs to each object of the class
+
+
+Attributes - methods
+Methods
+-2 types: void and return
+-void and return methods can be static or non-static
+-void and return methods can be final or not final
+
+-OVERLOADING 
+-method signature = methodName+args
+Example: main(String[] args)
+Example: println()
+Example: methodName(), methodName(args)
+
+-Each method is created and used to run a specific task
+-The main advantage is CODE REUSABILITY. We can write a method once and use it multiple times. We do not have to rewrite the entire code each time
+-Methods make code more readable and easier to debug
+
+OOP Principles
+1.Encapsulation
+2.Inheritance
+3.Abstraction (Abstract classes vs Interface)
+4.Polymorphism
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

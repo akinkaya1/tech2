@@ -1,0 +1,47 @@
+
+
+
+04/19/2021 - Introduction to Computer Programming
+
+What is computer?
+-It is a machine processing information
+-It is a machine takes instructions from user and return output based on instructions
+-input: is the data provided user
+-computer process data and outputs data
+-output: the result computer gives back
+
+-binary form: ones and zeros
+
+-CPU: Central Processing Unit - brain of the computer
+
+A computer is an electronic machine that is used to input, process, and then output data, typically in binary form, according to instructions given to it in a variable program
+
+
+Counting system:
+
+Oldest way of counting ->||||||||||||||||||||||||||||||
+
+Binary 0 1 -> 1 2 4 8 16 32 64 128 256 512 1024
+
+Decimal 0 1 2 3 4 5 6 7 8 9-> 1 10 100 1000 10000 100000
+
+5 times 1000 -> 5000
+3 times 10 -> 30
+5 times 1 -> 5
+5035
+
+binary digit -> bit 
+1 bit is either 1 or 0
+8 bits -> 1 byte
+1024 bytes -> 1 kilobyte and it goes like that to megabyte, gigabyte, terabyte ... zettabyte
+
+95 is represented by 01011111 in binary system
+
+Java -> 01001010011000010111011001100001
+
+
+
+
+
+
+

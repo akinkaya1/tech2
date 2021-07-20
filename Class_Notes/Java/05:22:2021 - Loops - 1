@@ -1,0 +1,66 @@
+
+
+
+05/22/2021 - Loops - 1
+
+-Loops in Java are used to execute a block of code repeatedly
+-Loops will run until a termination condition is met
+-Loops are helpful to eliminate duplicating codes and time saving
+
+
+1. For loop (traditional i loop or i loop)
+
+Syntax:
+
+for(initialization; termination condition; change){
+	//code block to be executed
+}
+
+initialization -> startPoint -> int i = 0; int i = 1;
+termination condition -> endPoint -> condition to stop
+change -> update -> update after each iteration
+
+ITERATION -> each repeated execution in the loop
+INFINITE LOOP -> when there is no termination point and your loop runs forever
+
+
+NOTE;if you started a variable inside a block, you cannot use that outside of the block: COMPILER ERROR
+
+WHEN WE CAN USE FOR I LOOP?
+-When we know the start point, end point and update
+-When you know how many times that your loop will run
+-You know the iteration number
+
+for(start; terminationCondition; update){
+	
+}
+
+
+2. while loop
+Syntax:
+
+while(test condition){
+	//code block to be executed
+}
+
+-While loop executes a block of code depending on a condition
+-While condition is true, the block of code will be executed
+
+FOR LOOP VS WHILE LOOP
+-For loop is used to execute a block of code and preferred when we know the exact number of iteration
+-While loop is used to execute a block of based on a condition and total number of iteration is not certain (dynamic)
+-While loop can be used instead of for loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+

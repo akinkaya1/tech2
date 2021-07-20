@@ -1,0 +1,199 @@
+
+
+
+07/11/2021 - OOP Part 2 - Abstraction-Interface
+
+OOP Principles
+1.Encapsulation
+2.Inheritance
+3.Abstraction
+4.Polymorphism
+
+ABSTRACTION
+-Abstraction is a process of hiding the implementation details and showing only functionality to the user
+-Abstraction only deals with WHAT TO DO 
+-HOW TO DO is the concern of sub classes that extends to abstract class
+
+
+HOW TO ACHIEVE ABSTRACTION IN JAVA?
+1.Abstract classes
+2.Interfaces
+
+1.ABSTRACT CLASSES
+-We can create abstract classes with "abstract" keyword
+-We can also create abstract methods with "abstract" keyword
+RULES:
+-Abstract classes CANNOT be instantiated meaning you CANNOT create objects from abstract classes
+-Although we CANNOT create object from abstract classes, they can still have constructor and these constructors can be used by child classes
+-First non-abstract class that extends to abstract class MUST override (implement) all the asbtract methods
+-We can have both abstract and non-abstract methods in abstract classes. Abstract methods CAN NEVER be final or static but the regular non-abstract methods in the abstract class CAN BE static or final.
+
+-Can we have abstract methods in non-abstract classes?
+NO, if a class is not abstract, then we CANNOT create abstract methods in that class.
+
+-Can we have non-abstract methods in abstract classes?
+YES, we can create both abstract and non-abstract methods in abstract classes.
+
+-Can we make an abstract class final? (final abstract)
+NO, this two modifiers has conflict and you cannot make abstract class final.
+-making class abstract means, you should inherit it by child class
+-making class final means, you cannot inherit it by child class
+
+final instance variable : it cannot be changed
+final method : it cannot be overridden
+final class : it cannot be inherited
+
+
+ABSTRACT METHOD
+-They can be created with abstract keyword
+-They CANNOT have body
+-Abstract methods can have arguments
+-Body for abstract methods MUST be provided by non-abstract child classes
+
+Can we make abstract methods final?
+NO, this two modifiers has conflict and you cannot make abstract method  final.
+-making method abstract means, you MUST override it in child class
+-making method final means, you cannot override it in child class
+
+NOTE: final and abstract modifiers cannot be combined in any case as they are opposite of each other
+
+-WHERE CAN WE HAVE ABSTRACT METHODS?
+-We can have abstract methods ONLY in abstract classes and interfaces
+
+-Can we make abstract methods static?
+NO, this two modifiers has conflict and you cannot make abstract method static
+-static methods CANNOT be overridden but abstract methods MUST be overridden by non-abstract child classes
+
+
+OUTER CLASS
+class cannot be static
+class cannot be private
+class cannot be protected
+
+HOWEVER, we can create a class inside another class (INNER CLASS)
+inner class can be static
+inner class can be private
+inner class can be protected
+
+
+INTERFACES
+-Interfaces are also used to achieve abstraction in Java
+-Interface is another way of achieving abstraction in Java and we can define ADDITIONAL FEATURES of objects by using interfaces
+-Just like abstract classes, interfaces CANNOT be instantiated meaning we CANNOT create objects of interfaces
+-Interfaces CANNOT have constructors
+-Just like abstract classes, interfaces are created to be used by child classes
+-They are used to define WHAT TO DO for implementing child classes
+
+RULES:
+-We can create interfaces using "interface" keyword instead of "class" keyword
+
+public interface BlueTooth{
+	
+}
+
+public interface Camera{
+	
+}
+
+-Interfaces can be inherited by child classes using "implements" keyword
+-One class can extend to one class but implement multiple interfaces
+
+public class Samsung extends Phone implements Camera, BlueTooth{
+	//Override abstract methods from Phone, Camera and BlueTooth
+}
+
+public class SamsungS7 implements Camera, BlueTooth{
+	//Override abstract methods from Camera and BlueTooth
+}
+
+-Interfaces can have abstract methods that does not have body
+-Actually, methods in the interface are "public abstract" by default
+-When a class implements one or more interfaces, FIRST THING TO DO is to override all abstract methods (providing body to abstract methods)
+
+-One interface can extend to another interface using "extends" keyword
+-One interface can extend to one or more interfaces using "extends" keyword
+-Classes CAN NEVER be parent to interfaces
+-Interfaces CANNOT extend or implement classes
+
+Can interface have instance variables?
+-YES, all instance variables in interfaces are "public static final" by default
+
+
+Can we have methods that have body in the interfaces?
+Can we have non-abstract methods in the interfaces?
+Can we have only abstract methods in the interfaces?
+-methods in the interfaces are "public abstract" by default
+-BUT, we can have non-abstract methods as well in the interfaces
+-non-abstract method means a method having body
+-Interfaces can have methods that has body by using default keyword 
+NOTE: default keyword is not defining access modifier here!!!
+-default methods in the interfaces are also public
+-default methods can be overridden and overloaded
+-default methods CANNOT be final and static
+
+-Static method: Interfaces can have regular static methods that has body
+NOTE: These methods are always public as well and can be called with interface name
+
+-any combination of abstract-default-static-final keywords for the interface methods cannot be accepted
+
+NOTE: interfaces are named like Serializable, Cloneable, Rollable
+
+
+What is abstraction?
+-Abstraction is a process of hiding the implementation details and showing only functionality to the user
+
+Why we need abstraction?
+-Allows us to hide implementation and increase code reusability
+
+How to achieve abstraction? 
+What ways do you know to do abstraction?
+-There are 2 ways to achieve abstraction in Java
+1. abstract classes
+2. interfaces
+
+
+Why we need interfaces?
+-FIRST: multiple inheritance
+-flexibility to implement or not
+-used for the additional features 
+
+
+INTERFACE vs ABSTRACT CLASS
+SIMILARITIES:
+-Both are used to achieved abstraction
+-Both cannot be instantiated, you cannot create objects of abstract classes and interfaces
+
+DIFFERENCES:
+-Abstract class allows single inheritance while interface allows multiple inheritance
+-one is interface, the other is class
+-abstract class can have both abstract and non-abstract methods while interface can have only abstract methods (exception default and static methods)
+-abstract class can have constructors to be used by child classes while interface cannot have constructors
+-abstract class can have any type members that can be defined with private, default, protected, public
+-all the methods and members of interfaces are public by default. They cannot be private, default and protected
+-interface methods are by default "public abstract"
+-interface instance variables are by default "public static final" and these must be initialized
+-A class can inherit an abstract class by "extends" keyword while it can inherit interface by "implements" keyword
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

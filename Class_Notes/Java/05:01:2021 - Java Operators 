@@ -1,0 +1,134 @@
+
+
+
+05/01/2021 - Java Operators - 1
+
+
+Java Operators: These are special symbols that are used to do assigment, comparison, mathmetical calculation or logical comparison
+
+1.Assigment operator: equal sign (=) is used as assignment operator
+
+2.Arithmetic operators: These are 5 and used to do mathematical calculations
++ addition
+- subtraction
+/ division
+* multiplication
+% remainder
+
+
+JAVA ALWAYS READS FROM TOP TO BOTTOM AND LEFT TO RIGHT
+
+REMAINDER
+Example:
+1. if the number on the left of remainder sign is greater the one on the right
+25 % 4 = 1 	-> 25 = 6*4 + 1
+15 % 6 = 3 	-> 15 = 2*6 + 3
+19 % 5 = 4 	-> 19 = 3*5 + 4
+
+2. if the number on the left of remainder sign is less than the one on the right
+In this case result is always the left number
+3 % 5 = 3 	-> 3 = 0*5 + 3
+105 % 120 = 105
+45 % 50 = 45
+
+3. if both numbers are same
+10 % 10 = 0 -> 10 = 10*1 + 0
+25 % 25 = 0 -> 25 = 25*1 + 0
+
+
+40 % 8 = 0 	-> 40 = 5*8 + 0
+4 % 2 = 0 	-> 4 = 2*2 + 0
+
+40 / 5 = 8
+40 % 5 = 0
+
+
+DIVISION
+6 / 4 = 1
+6 / 4 = 1.5
+
+-We should be careful when we divide numbers as we may miss floating points.
+-it is better to use double if you will have floating number in your result and explicitly store your result in double as well by using parantheses
+
+double result = (double) 5 / 2;  // 2.5
+
+
+PRIORITY TO THE CALCULATION
+1.Parantheses first, inner parantheses first
+2.multiplication or division (what ever comes first from left to right)
+3.Addition or subtraction (left to right)
+
+EXAMPLES:
+-3 + 5 + 5*3/3 + 2*4   -> 15
+-3 + 5 + 5 + 8 -> 15
+
+(22-8)/7 + 3*9-5 + 6   -> 30
+14/7 + 3*9-5 + 6
+2 + 27 - 5 + 6 		-> 30
+
+8 - 2*4 + (99/11)*3*(2+5-3) + 25 -> 133, 133
+8 - 2*4 + 9 * 3 * 4 + 25
+8 - 8 + 108 +   -> 133
+
+((23-8)/3)*7 + (-3+2)*11 + 67 -> 91
+(15/3)*7 + (-3+2)*11 + 67
+5*7 + (-1)*11 + 67
+35 -11 + 67 -> 91
+
+
+balance = 1000.0;
+
+purchase airpods for 150.0
+
+balance -= 150.0   -> 850.0
+
+purchase iPhone10 for 700.0
+
+balance -= 700.0    -> 150.0
+
+monthly salary added for 4000.0
+
+balance += 4000.0   -> 4150.0
+
+
++ -> can be used to concatenate (String)
++ -> can be used to do addition (int, byte, short, long, double, float, char)
+
+String s1 = "25";
+String s2 = "35";
+
+int i1 = 25;
+int i2 = 35;
+
+System.out.println(s1 + s2); // 2535
+System.out.println(i1 + i2); // 60
+
+System.out.println(s1 + i1); // 2525
+
+Converting char to int and int to char based on ASCII
+        int numberA = 'a'; // 97
+        char charA = 'a';  // a
+        char charB = 98; // b
+
+REDUNDANT CODE: unnecessary (extra) code in your program
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

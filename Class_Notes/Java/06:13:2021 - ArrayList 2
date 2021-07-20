@@ -1,0 +1,115 @@
+
+
+
+06/13/2021 - ArrayList 2
+
+RECAP:
+
+Array: It is a collection that allows to store multiple data in a single variable
+
+-Arrays can be used to store both primitives and non-primitives (Object)
+SYNTAX:
+dataType[] variableName = {e1, e2.....eN};
+dataType[] variableName = new dataType[size];
+var variableName = {e1, e2.....eN};
+var variableName = new dataType[size];
+
+EXAMPLE:
+String[] cities = {"Tokyo", "Rio", "Oslo"};
+int[] numbers = new int[3];
+
+cities[3] = "Chicago";// ArrayIndexOutOfBoundException
+
+-Array is fized sized. Once you create an array, you must declare the size and it cannot be changed. It means, you cannot add or remove elements from array.
+-You can access and update data in array
+-variableName[index]; //this is used to access element at given index
+-variableName[index] = value; // this is used to update element at given index
+
+-length is used to find the size of the array
+-Arrays has toString() method to convert array to a String
+-Arrays has sort() method to sort elements 
+-Arrays has deepToString() method to convert multi dimensional arrays to a String
+-Arrays has binarySearch() method to search for a specific element from the collection
+
+NOTE: split() and toCharArray() methods ARE NOT Arrays class methods. They are String class methods
+
+
+
+ArrayList: It is a collection that allows to store multiple data in a single variable
+-ArrayList can only be used with Objects. It cannot be used with primitives
+
+SYNTAX:
+ArrayList<T> variableName = new ArrayList<>();
+ArrayList<T> variableName = new ArrayList<T>();
+List<T> variableName = new ArrayList<>();
+List<T> variableName = new ArrayList<T>();
+var variableName = new ArrayList<>();
+var variableName = new ArrayList<T>();
+
+-ArrayList is a dynamic sized array. So, it has dynamic size. Dynamic size means, you can remove or add elements to the collection.
+
+-ArrayList is providing many useful methods to manipulate the data it stores
+-Some of those methods are: add(element), 
+add(index, element), get(index), size(), 
+set(index, element), indexOf(element), 
+lastIndexOf(element), contains(), clear(), 
+remove(index), remove(object), removeAll(collection), 
+addAll(collection)
+
+
+
+LinkedList: It is a collection that allows to store multiple data in a single variable
+-ArrayList can only be used with Objects. It cannot be used with primitives
+
+SYNTAX:
+LinkedList<T> variableName = new LinkedList<>();
+LinkedList<T> variableName = new LinkedList<T>();
+List<T> variableName = new LinkedList<>();
+List<T> variableName = new LinkedList<T>();
+var variableName = new LinkedList<>();
+var variableName = new LinkedList<T>();
+
+-LinkedList is dynamic considering size. So, it has dynamic size. Dynamic size means, you can remove or add elements to the collection.
+
+--LinkedList is also providing many useful methods to manipulate the data it stores
+-Some of those methods are: add(element), 
+add(index, element), get(index), size(), 
+set(index, element), indexOf(element), 
+lastIndexOf(element), contains(), clear(), 
+remove(index), remove(object), removeAll(collection), 
+addAll(collection)
+-LinkedList is providing more useful methods compared to ArrayList. 
+For example: getFirst()-peek(), getLast(), addFirst(), addLast()
+
+
+DIFFERENCES BT ARRAYLIST AND LINKEDLIST
+-ArrayList stores the value in a single position
+-Whenever an element is added or removed, all elements after that position are shifted
+-LinkedList stores 3 values (previous address, data, and next address) in a single position
+-Whenever an element is added or removed, previous and next address are changed
+
+-LinkedList is faster when you remove or add elements compared to ArrayList				
+-LinkedList allocates more memory compared to ArrayList				
+-ArrayList is allocating less memory compared to LinkedList				
+-ArrayList is slower when you remove or add elements compared to LinkedList				
+
+
+
+[10, 10, 10, 47, 47, 34, -20, -20, -10, 0]
+
+remove duplicates first [10, 47, 34, -20, -10, 0]
+
+10, 47, 34, -20, 10, 0
+sort -> [-20, -10, 0, 10, 34, 47]
+
+
+smallest -> first index
+greatest -> last index 
+
+second smallest -> second index
+second greatest -> second from the last
+
+
+
+
+

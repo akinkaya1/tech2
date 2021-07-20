@@ -1,0 +1,129 @@
+
+
+
+06/21/2021 - OOP Part 1 - Methods
+
+RECAP:
+Class: it is a blueprint or template where we can create objects from
+
+Object: it is an instance of the class
+
+
+public class Animal{
+	//instance variables, methods, constructors, blocks
+}
+
+Animal myAnimal = new Animal();
+
+CLASS MEMBERS
+1. Instance variables
+-fields, states, attributes
+
+IQ - LOCAL VARIABLES vs INSTANCE VARIABLES
+-Local variables are the ones created in a block {}
+-Local variables are the ones created in methods, if else blocks or switch block or loop blocks
+
+NOTE: The scope of local variables is the block it is created and it cannot go outside of that block
+
+2. Methods
+-behaviors, functions
+
+3. Constructors
+-Special kind of method used to create objects
+-It is always used with "new" keyword
+
+4. Blocks
+-These blocks are used to run a block of before everthing else
+
+final keyword
+-instance variables can be final
+-when you make an instance variable final, you MUST assign an initial value to it (Otherwise, compiler error)
+-Then, this initial final value cannot be changed
+
+static
+-is used to define if class members belongs to the class or the instance of the class 
+-static members belongs to the class
+-non-static members belongs to the instance of the class
+
+-attributes, methods and blocks can be static
+
+
+HOUSE
+House has window - static -> 
+static final boolean hasWindow = true;
+
+Has pool -> non-static
+boolean hasPool;
+
+Raqi's house
+Maryna's house
+
+static vs dynamic
+
+
+2. METHODS
+-A method is a block of code that performs a specific task
+main(), println(), randomNumberGenerator(), max()
+-Methods are functions or behaviors of the class
+-There are void and return types of methods
+
+Syntax:
+accessModifier returnType methodName(){ 
+	// method body
+ }
+
+public void printName(String name){
+	System.out.println(name);
+}
+
+
+COMPONENTS OF THE METHODS
+-returnType - It specifies what type of value a method returns. For example, if a method has an int return type then it returns an integer value
+-If the method does not return a value, its return type is void
+
+-methodName - It is an identifier  that is used to refer to the method in a program, could be any name but should be meaningful to increase readability of your code
+
+-method body - It includes the programming statements that are used to perform some tasks. The method body is enclosed inside the curly braces { }
+
+-method parameters – Arguments that we pass inside the method parentheses
+
+METHOD SIGNATURE
+-println(), main(String[] args)
+-Signature = methodName + arguments
+
+METHOD OVERLOADING
+-Same name but different signatures
+-In Java, two or more methods  may have the same name
+-This is allowed if they differ in parameters (different number of parameters, different types of parameters, or both). 
+-These methods are called overloaded methods and this feature is called method overloading
+-Note: Multiple methods can have the same name if the number and/or type of parameters are different
+
+EXAMPLES/ 	substring(beginIndex),  
+			substring(beginIndex, endIndex)
+			max(int a, int b)
+			max(double a, double b)
+
+
+Advantages of using methods
+-The main advantage is code reusability. We can write a method once and use it multiple times. We do not have to rewrite the entire code each time
+-Methods make code more readable and easier to debug
+
+
+NOTE: void methods are created with void keyword
+You cannot use return keyword in void methods
+
+NOTE: return type methods should have return statement in the body
+return type methods should never be void
+We cannot have any code under return statement - it is unreachable code
+
+
+
+
+
+
+
+
+
+
+
+

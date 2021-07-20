@@ -1,0 +1,146 @@
+
+
+
+06/12/2021 - ArrayList 1
+
+-Array is a collection that is used to store multiple same data in one variable
+-Arrays are fixed consireding size
+-Once size is declared, it cannot be changed anymore
+-Arrays can be used with primitives and objects like String
+
+SYNTAX:
+int[] numbers = {1, 2, 3, 4, 5};
+
+String[] b3Students = new String[15];
+b3Students[0] = "Lionel";
+
+b3Students[0];
+
+numbers[10] = 10; // Runtime error as size was 5
+
+b3Students[15] = "Salih";
+
+-ArrayList is a collection that is used to store multiple same data in one variable
+-It has dynamic size and you don't need to declare the size when you create an ArrayList
+
+-ArrayLists are dynamic sized arrays
+-ArrayList and all other collections cannot be used with primitives but only Objects
+
+
+How to create an ArrayList?
+Array -> String[] b3Students = new String[15];
+
+ArrayList<String> b3Students = new ArrayList<String>();
+ArrayList<Integer> numbers = new ArrayList<Integer>();
+ArrayList<Double> balances = new ArrayList<>(5);
+
+ArrayList<T> variableName = new ArrayList<>();
+List<T> variableName = new ArrayList<>();
+var variableName = new ArrayList<>();
+
+How to add elements in an ArrayList?
+-We can use add() method to add elements in an ArrayList
+ArrayList<String> fruits = new ArrayList<>();
+fruits.add("Strawberry");
+
+-There are two overloaded add() methods
+	1. add(element) -> this will add element to the last index
+	2. add(index, element) -> this will add element to the specified index
+
+How to print an ArrayList?
+Array -> System.out.println(Arrays.toString(arr));
+
+ArrayList -> System.out.println(fruits);
+
+How to access a specific element from the ArrayList?
+int[] numbers = {1, 2, 3, 4, 5};
+Array -> System.out.println(numbers[2]); //3
+
+ArrayList -> System.out.println(fruits.get(2));
+
+-get(index) is used to get and print specific element from an ArrayList 
+
+
+How to find ArrayList size?
+Array -> int[] numbers = {1, 2, 3, 4, 5};
+
+numbers.length; // returns an int 5
+
+ArrayList<String> fruits = new ArrayList<>();
+fruits.add("apple");
+fruits.size(); // returns an int 1
+
+
+---> add(element), add(index, element), get(index), size(), set(index, element), indexOf(element), lastIndexOf(element), contains(), clear(), 
+remove(index), remove(object), removeAll(collection), 
+addAll(collection)
+
+
+How to change-update an element ArrayList?
+-We can use set(index, element) to update an existing element
+
+
+Index exceptions---
+
+String s = "Lionel";
+s.charAt(9); -> StringIndexOutOfBoundException
+s.substring(10, 15) -> StringIndexOutOfBoundException
+s.substring(8) -> StringIndexOutOfBoundException
+
+int[] numbers = new int[3];
+numbers[3] = 15; -> ArrayIndexOutBoundException
+numbers[8]; -> ArrayIndexOutBoundException
+
+ArrayList<Integer> nums = new ArrayList<>();
+nums.add(10);
+
+nums.add(4, 20); IndexOutOfBoundException
+nums.set(3, 15); IndexOutOfBoundException
+nums.get(10); IndexOutOfBoundException
+ 
+
+How to find position (index) of an element in ArrayList?
+- indexOf(element), lastIndexOf(element) can be used to find the first or last position of a particular element
+
+
+How to find out if an ArrayList has a specific element?
+-contains() method can be used to find if ArraList has a particular or not
+-it returns true or false
+
+
+How to remove an element from ArrayList?
+-remove() method can be used to to remove an element from list
+-There are two overloaded remove() methods
+	1. remove(object) this takes an object and returns boolean and states if element is removed with true or false
+
+	2. remove(index) this takes an int as an index and returns object that is removed
+
+
+How to remove all elements in an ArrayList?
+-removeAll(collection) or clear() methods can be used to remove all elements from an ArrayList
+	1. list.clear();
+	2. list.removeAll(list);
+
+	clear() is a void method and does not return anything
+	removeAll(collection) is a return type and it returns boolean
+
+
+How to add multiple elements to an ArrayList at a time?
+-We can use addAll() method to add multiple elements to an ArrayList
+
+How to remove multiple elements from an ArrayList at a time?
+-removeAll(collection) method can be used to remove multiple elements from an ArrayList
+
+
+How to get first and last element from a ArrayList?
+Array -> first : arr[0]
+		  last : arr[arr.length-1]
+
+ArrayList-> first: list.get(0);
+			last : list.get(list.size()-1);
+
+
+
+
+
+

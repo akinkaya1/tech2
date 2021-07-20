@@ -1,0 +1,38 @@
+
+
+
+05/03/2021 - Practice 2 - Math class
+
+-Math Class
+-it provides useful methods for us to use and do math calculations
+-max(), min(), random(), abs(), sqrt(), round()
+-java.lang package
+
+
+Math.max(x, y);
+-it takes 2 numbers
+-it returns the max number
+
+Math.min(x, y);
+-it takes 2 numbers
+-it returns min number
+
+Math.abs(a);
+-it takes 1 number
+-it returns the positive value of given number
+
+Math.sqrt(x);
+-it takes a number and returns the root of it
+
+Math.random();
+-it returns a number between 0.0(included) and 1.0(excluded)
+
+Math.round(x);
+-it takes a number
+-it returns closest int to given number
+
+
+
+
+
+

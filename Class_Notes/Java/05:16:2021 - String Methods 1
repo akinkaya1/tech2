@@ -1,0 +1,224 @@
+
+
+05/16/2021 - String Methods 1
+
+RECAP:
+
+Method:
+-block of code to run a specific task 
+-findSum(), print(). println(), getNumberBt1to10()
+
+-methods are also known as functions - behavior of a class
+
+Method types:
+1.void types
+2.return types
+
+Difference bt void and return types
+Syntax:
+
+public void methodName(){
+	//block of code to execute
+}
+
+
+public returnType methodName(){
+	//block of code to execute
+	return statement;
+}
+
+static keyword and static methods: 
+-both void and return type methods can be static or not
+-if you want to access the method with className, you make method static
+EX/ className.methodName()
+
+-if you want to access the method with not className but with object of the class, then you don't make method static
+EX/
+className variableName = new className();
+variableName.methodName();
+
+-making a method static makes method to be owned by class
+-static methods belong to class not object
+-non-static methods belong to object of the class
+-object = instance
+
+DIFFERENCE BT OBJECT AND CLASS
+-Class is a blueprint or template where many object can be created
+-Object is an instance of a class
+-Countless objects can be created from one class (blueprint or template)
+
+
+COMPONENTS OF A METHOD
+-accessModifier: this defines the accessibility of the method
+public, protected, default, private
+
+-return type: this specifies what type of value returns. if the method is void, then it does not return any value
+
+-method name: this is the identifier for method created. It could be any name, usually starts with lowerCase and follows camelCase rule. We should always give meaningful names to our methods 
+
+-method parameters (arguments): these are the variables that we pass into methods parentheses
+
+-method body: these are code statements that executes when method is called. It is the code bt opening and closing curly braces {}
+
+HOW MANY PARAMETERS CAN A METHOD HAVE?
+-there is no limit, you can define as much parameters that you need. Usually it is zero to five
+
+WHAT IS METHOD SIGNATURE?
+-it is only the method name + parameters it takes
+EX/ ........... methodName(args)
+
+WHAT IS METHOD OVERLOADING?
+print(String s)
+print(int i)
+print(char c)
+print(byte b)
+print(Random r)
+
+-In Java, two or more methods  may have the same name
+-This is allowed if they differ in parameters (different number of parameters, different types of parameters, or both). 
+-These methods are called overloaded methods and this feature is called method overloading
+-Note: Multiple methods can have the same name if the number and/or type of parameters are different
+
+
+HOW TO ACHIEVE METHOD OVERLOADING?
+-Method overloading is achieved by either:
+	-changing the number of arguments
+	-or changing the data type of arguments
+	-argument = parameter
+
+
+ADVANTAGES OF CREATING METHODS?
+-The main advantage is code reusability. We can write a method once and use it multiple times. We do not have to rewrite the entire code each time
+-Methods make code more readable and easier to debug
+
+
+NOTE:
+-do not ever put void method in System.out.println();
+
+
+STRING METHODS
+-String is a Java class and we can create many String objects
+Ex/ String name = "Lionel"; //creating a String object
+String address = "Chicago"; //
+
+-String is used to store a sequence of characters
+-We can also have empty String - ""
+
+-concat(), valueOf()
+
+int age1 = 45;
+
+1. String age2 = 45 + "";
+2. String age3 = String.valueOf(age1);
+
+String manipulation: change, modify
+-String class contains many useful methods for string- processing applications
+-String methods are used to manipulate the string data
+-String manipulation = modifying strings based on our need
+
+
+
+1.valueOf(primitive) method
+This method is used to convert primitives to String
+         -it is static method
+         -it is an overloaded method
+         -it is a return type method and it returns a String
+
+2. concat(String) method
+This method is used to add a string to the end of another string (concatenation)
+        There are 2 ways to do concatenation
+        1. we can use plus + operator
+        2. we can use concat method
+
+        -concat() is a non-static method
+        -it is a return type and it returns a String
+
+
+STRING COMPARISON
+5 == 5				-> true
+'B' == 'B'			-> true
+'B' == 'b' 			-> false
+true == true 		-> true
+false == false 		-> true
+true == false 		-> false
+45.6 == 45.6 		-> true
+
+== can be used to compare numbers, booleans, chars but it cannot be used to compare 2 strings
+
+"Lionel" == "Lionel"
+We will never use == to compare strings
+-to compare 2 strings, we can use equals() method
+-this method will compare 2 strings and will return a boolean
+
+
+3. equals(String) method
+-This method is used to compare two strings
+-This method is going to return true if the strings are equal, and false if not
+-So, the return type of this method is boolean
+         -it is a return type method and it returns boolean
+         -it is not static
+
+Yasser, YASSER 		-> false
+abc, abc 			-> true
+XYZ, XYz 			-> false
+Raqi, Sarah 		-> false
+
+
+
+4. equalsIgnoreCase(String) method
+Yasser, YASSER 		-> true
+abc, abc 			-> true
+XYZ, XYz 			-> true
+aBcDe, ABCDE 		-> true
+
+
+5.6. toLowerCase() and toUpperCase() methods
+-toLowerCase() method is used to convert a string to lower case letters
+-toUpperCase() method is used to convert a string to upper case letters
+-Both methods are no-args methods
+-both are return types, and they return String
+-both of them are non-static methods
+
+
+7. charAt(index) method
+
+String name = "Alex";
+
+2nd is = l   	-> 1
+3rd is = e 		-> 2
+1st is = A 		-> 0
+
+-charAt() method is used to find the character at the specified index (position)
+-This method is going to return the character at specified index
+-index = position, place
+-NOTE: index starts from 0 -> 0,1,2,3,4,5,6…………
+-It will throw an exception if given index not found
+	    java.lang.StringIndexOutOfBoundsException
+-it is a return type and it returns char
+-it is non-static as we call it with object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

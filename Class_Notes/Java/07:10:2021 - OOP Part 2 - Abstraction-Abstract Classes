@@ -1,0 +1,138 @@
+
+
+
+
+07/10/2021 - OOP Part 2 - Abstraction-Abstract Classes
+
+OOP-Principles
+Encapsulation
+Inheritance
+Abstraction
+Polymorphism
+
+-Encapsulation is used for data security
+-With that we are able to hide some data from other classes
+-Hiding data : restricting direct access to the instance variables and providing indirect access with public setters and getters
+
+
+-Inheritance is the concept of sharing one class info with another by creating base-sub class relation between them using extends keyword
+NOTE: once inheritance is achieved, polymorphism will be there as well.
+
+-Abstraction is almost same as Inheritance
+-Purpose of the abstraction is to be used with inheritance
+
+-Animal is a class and it is blueprint for its own objects
+-When it is inherited, it becomes a blueprint sub class objects as well
+
+Polymorphism : many shapes
+Polymorphism concept is the one object being able to get into many shapes
+
+public class Dog extends Animal{
+	
+}
+
+Dog is a Dog
+Dog is an Animal
+Dog is an Object
+
+-One object can definetely take shape/form of their own class
+-One object can also take shape/form of all its anchestor
+
+Dog dog1 = new Dog();
+Animal animal1 = new Dog(); // Polymorphism
+
+ArrayList<String> names = new ArrayList<>();
+List<String> names = new ArrayList<>(); // Polymorphism 
+
+LinkedList<String> names = new LinkedList<>();
+List<String> names = new LinkedList<>(); // Polymorphism 
+
+
+
+ABSTRACTION
+-Abstraction is a process of hiding the implementation details and showing only functionality to the user
+-It is defining WHAT TO DO for child classes and child classes will deal with HOW TO DO part
+-Abstraction can be achieved in 2 ways
+1. abstract classes
+2. interfaces
+
+NOTE: Abstract classes or Interfaces are created to be used by other classes
+
+-We can create abstract classes with abstract keyword
+	public abstract class Phone{
+	
+	}
+-We CANNOT instantiate abstract classes - meaning we CANNOT create objects from abstract classes
+-Abstract classes are created to be inherited by some child classes
+-Abstract classes are templates/blueprints to child classes
+-Abstraction is closely related with Inheritance and without inheritance, you cannot use abstract class
+-There is NO SENSE to make a class abstract and do not inherit to it with any class
+
+-When an abstract class is inherited by a child class, FIRST THING MUST BE DONE is to implement body for the abstract methods
+-All abstract methods from abstract class MUST BE PROVIDED body
+
+WE CANNOT CREATE OBJECTS FROM ABSTRACT CLASS, BUT CAN WE HAVE CONSTRUCTOR IN ABSTRACT CLASS?
+-The purpose of having contructor in a class is making it possible to create object from that class
+-ABSTRACT CLASS CAN HAVE CONSTRUCTORS
+-The only reason we are allowed to have constructor in abstract class is to use it in child classes
+
+CAN YOU HAVA NON-ABSTRACT METHODS IN AN ABSTRACT CLASS?
+-YES, we can have both abstract and non-abstract methods in abstract class
+
+CAN YOU HAVA FINAL METHODS IN AN ABSTRACT CLASS?
+-Yes but this method should be non-abstract
+
+final method: method CANNOT BE OVERRIDDEN in child class
+abstract method: method MUST BE OVERRIDDEN in child class
+That is why one method CAN NEVER BE final and abstract at the same time
+
+CAN ABSTRACT METHOD HAVE BODY?
+-NO, abstract method means method that does not have body
+-And body must be provided by child class
+
+
+NOTE: 
+If there are already some child classes inheriting from abstract class and if you add one or more abstract methods in this parent class, then you will get compiler error in child classes. 
+TO RESOLVE, you MUST visit your child classes and implement body for the newly added abstract methods as well
+
+
+-An abstract class can be inherited by many subclasses same as non-abstract classes
+-Any non-abstract class that extends to an abstract class MUST implement body for the abstract methods
+-An abstract class can be inherited by another abstract subclass and in this case:
+abstract methods may not be implemented in the subclass
+BUT, any third class that extends to abstract subclass MUST implement all abstract methods in both abstract classes
+
+
+abstract class Phone -> 
+-I will never create object of Phone
+-This abstract class will only be used by child classes
+
+define all attributes and functions
+call(), text()
+
+public abstract void call();
+
+
+iPhone
+@Override  
+public void call(){
+	System.out.println("iPhone is calling");
+}
+
+Nokia
+@Override
+public void call(){
+	System.out.println("Nokia is calling");
+} 	
+
+Samsung
+@Override
+public void call(){
+	System.out.println("Samsung is calling");
+}
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+
+
+04/25/2021 - String
+
+-String is an OBJECT that represents a sequence of characters
+EX/ “Hello” is a string of 5 characters
+EX/ “TechGlobal” is a string of 10 characters
+
+Declaration of String -> String s1;
+Assignment of a String -> s1 = “TechGlobal”;
+
+Declaration and initialization of a String -> String s2 = “Hello World”;
+
+-String is a Java class
+
+STRING CONCATENATION
+-String concatenation = forming a new string that is the combination of multiple strings
+
+-There are 2 ways of string concatenation in java
+	1. by “+” operator
+	2. by concat() method
+
+
+PSEUDO CODE
+-English like statements known as pseudo code
+-A flowchart which is a graphical representation of your program
+-Pseudo is a detailed description of what a computer program must do, expressed in an English like language than in a programming language
+
+PSEUDO CODE of making coffee
+-go to kitchen
+-open the cabinet
+-grab a mug
+-grab cup
+-boil water
+-fill your cup with water
+-add coffee
+-mix it
+-ENJOY!!!
+
+
+_____ myNum = 25;  -> int, byte, short, long, double, float, char
+_____ myNum2 = 34.56; -> double
+_____ myLetter = 'A'; -> char, int
+_____ v1 = false; -> boolean
+_____ v2 = "Lionel" -> String
+
+NOTE:
+char - int relation (conversion)
+-If we try to put a number into char, it will have the letter or symbol representation from ASCII
+-if we try to put a char into int, it will have the decimal representation from ASCII
+
+
+
+
+
+
+
+
+
+
+
+

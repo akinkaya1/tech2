@@ -1,0 +1,141 @@
+
+
+
+
+04/26/2021 - Print Statements & Scanner
+
+RECAP:
+
+Variable: it is a special container that holds a piece of data
+
+EXAMPLE: int age = 25;
+age is the container name - variable name
+int is the dataType
+25 is the value of age
+
+dataType variableName = value; // declaring and assigning
+dataType variableName; // declaration
+variableName = value; // assignment
+
+DECLARATION: allocating memory 
+ASSIGMENT: putting a value to the allocated container
+
+VARIABLE NAMING - NAMING CONVENTION
+-variable names: starts with lowercase, then follows camelcase
+-packages: starts with lowercase, then follows camelcase
+-classes: starts with uppercase, then follows camelcase
+-methods: starts with lowercase, then follows camelcase
+
+JAVA RESERVED KEYWORDS: public, static, void, int, byte so on..
+
+-We cannot use those reserved keywords to name our variables, packages, classes and so on.
+
+
+String Class
+-String is a Java class and can be used to store a sequence of characters
+
+EXAMPLE: String schoolName = "TEchGlobal";
+
+String CONCATENATION:
+-It is making a String that is combination of multiple Strings
+
+1.by using + operator
+2.by using concat() method
+
+PSEUDO CODE:
+-Step by step instruction of our programs - not too technical
+
+
+ESCAPE SEQUENCES
+-These are special characters that can be inserted to our texts
+
+1. double quotation ->  It is not possible to use double quotes inside another double quotes in JAVA (compiler error)
+-To solve this issue, we can use back slach \ in front of each inner double quotes
+
+String s = " \"inner double quotes\" ";
+
+1. \n : n stands fow "new line" and it moves cursor to next line
+
+2. \t : t stands "tab" and it inserts one tab space
+
+
+package
+//There cannot be any code here
+//Only import statement
+public class Test {
+
+    //Some members of the class can be written here as well. 
+	//Outside of the main() method
+
+
+
+    public static void main(String[] args) {
+    //All the code that we want to run goes into main() method
+
+        System.out.println("Hello World");
+    }
+
+
+}
+
+//There cannot be any code as well
+
+
+
+SCANNER
+-Scanner is a Java class that is used to read input from user
+-It is located in java.util package
+-To be able to use Scanner, we have to create an object and import it first
+
+Scanner myScanner = new Scanner(System.in);
+
+-new keyword is reserved keyword in Java and it is used to created objects
+-Without new keyword, we cannot create any objects
+-For each new Object, we have to use new keyword
+
+Integer age = 25;
+String name = "Lionel";
+
+Integer age = new Integer(25);
+String name = new String("Lionel");
+
+next() method
+-next() is one of the methods belongs to Scanner class
+-It is used to read next String (only one word) from user
+
+Scanner scanner = new Scanner(System.in);
+System.out.println(“Please enter a string”);
+String str = scanner.next();
+
+nextLine()
+-nextLine() is another method belongs to Scanner class
+-It is used to read the next line (full line) of String from user
+
+Scanner scanner = new Scanner(System.in);
+System.out.println(“Please enter a sentence”);
+String str = scanner.nextLine();
+
+next() vs nextLine()
+-next() method is going to read only one word (till first space) while nextLine() reads all line
+
+
+
+int age1 = 45; // number
+int age2 = 35;
+
+String age3 = "45"; // text
+String age4 = "35"; // text
+
+age1 + age2 = 80
+
+age3 + age4 = 4535
+
+
+
+
+
+
+
+
+
+

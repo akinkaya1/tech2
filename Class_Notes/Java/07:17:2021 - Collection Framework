@@ -1,0 +1,197 @@
+
+
+
+
+07/17/2021 - Collection Framework
+
+
+Collection: it is used to store multiple same items in the same place
+
+EXAMPLE: 
+Classic Car collection
+Cup collection
+Magnets
+
+
+String name = "Volkan";
+
+Array:
+-fixed sized. Once you declare the initial size, you can never change it. You cannot add new elements or you cannot remove existing elements
+-Array does not provide methods to read, write, process and manipulate the elements it contains.
+
+String[] names = {"name1", "name2", "name3"};
+names[0] = "Maryna";
+names.length; // 3
+names[3] = "Salih"; // ArrayIndexOutBoundException
+
+
+
+List
+ArrayList and LinkedList
+-List is an interface that is implemented by both ArrayList and LinkedList
+
+
+Set
+HashSet, LinkedHashSet, TreeSet
+-Set is an interface that is implemented by HashSet, LinkedHashSet, TreeSet
+
+
+Map
+HashMap, HashTable, TreeMap
+-Map is an an interface that is implemented HashMap, HashTable, TreeMap
+
+
+-Java Collections Framework is a set of pre-written classes and interfaces(List, Set, Map) that helps us to organize and manipulate groups of objects
+
+-By using Java Collections Framework, we can organize our objects in different ways like lists, sets, or maps
+
+-Java Collections Framework interfaces and classes comes from java.util package (Iterable is in java.lang only)
+
+Most important interfaces that are implemented by collection classes are List, Set and Map
+
+
+		LIST INTERFACE
+        LIST (ArrayList/LinkedList) keeps insertion order
+        LIST (ArrayList/LinkedList) allows us to have duplicates
+        LIST (ArrayList/LinkedList) allows us to have null elements
+        LIST (ArrayList/LinkedList) allows us to use all methods with index
+
+        ArrayList vs LinkedList
+        -LinkedList stores an element with its value, previous element location and next element location
+        -ArrayList stores an element with its index
+        -Because of the way they are storing data,
+        ArrayList allocates less memory while LinkedList allocates more memory
+        -Because of the way they are storing data, it is faster when we remove or add elements to LinkedList
+        and it is slower when we remove or add elements to ArrayList
+        -LinkedList implements all the methods from Deque and Queue (both are interfaces). That is why it provides  more methods compared to ArrayList
+
+
+SET INTERFACE
+-Set does not keep insertion order (unordered collection of objects)
+-Set does not allow us to have any duplicates
+-Set does not allow us to use any method with index
+-Set allows us to have only one null value (no duplication)
+-Set can be used with foreach and iterator but cannot be used with fori loop (there is no index)
+
+
+-Some classes that are implementing Set are HashSet, LinkedHashSet, TreeSet
+
+
+How to create a HashSet object?
+1. Set<String> names1 = new HashSet<>();
+2. HashSet<String> names2 = new HashSet<>();
+
+
+How to convert ArrayList to HashSet and visa versa?
+-Converting ArrayList to HashSet will let you get rid of all duplicates as HashSet does not allow duplicates
+-However, this conversion may cause some unexpected order of elements as HashSet does not keep insertion order
+
+EXAMPLE:
+
+ArrayList<Integer> numbers = new ArrayList<>()
+numbers.add(10);
+numbers.add(10);
+numbers.add(15);
+numbers.add(25);
+numbers.add(25);
+numbers.add(5);
+
+Converting ArrayList to HashSet
+1. Create a HashSet object
+2. pass List collection as an argument into the HashSet constructor
+HashSet<Integer> numbersSet = new HashSet<>(numbers);
+
+The size of numbers -> 6        -> [10,10,15,25,25,5]
+The size of numbersSet -> 4     -> [10,15,25,5]
+
+
+How to manipulate data from Array like removing duplicates?
+1. Convert Array to ArrayList 
+	a. Arrays.asList()
+	b. Collections.addAll()
+	c. manual convertion with loops
+
+2. ArrayList to HashSet
+
+
+HashSet vs LinkedHashSet
+-LinkedHashSet extends to HashSet (So, we can say it is child)
+-There is only one difference between these that LinkedHashSet will keep insertion order
+	-LinkedHashSet does not allow duplication
+	-LinkedHashSet does not provide any method with index
+
+
+TreeSet (sorted Set)
+-TreeSet does not allow duplication
+-TreeSet does not provide any method with index
+-TreeSet does not allow any null element
+-TreeSet sorts the elements automatically
+	Numbers -> in ascending order
+	Objects -> lexicographically
+NOTE: if you add a null element to TreeSet, it will not show a compiler error but when you run, you will get a NullPointerException
+
+NOTE:
+HashSet is faster compared to LinkedHashSet and TreeSet and allocates less memory as it does not store insertion point or sorting the elements
+
+
+MAP
+-Map does not provide any method with index bacause it does not keep insertion order
+-Map is a data structure that helps us to store multiple items in a single unit as KEY and VALUE
+-It maps from key to value 
+-Keys are always unique in a map
+	a single key only appears once in the Map 
+	a key can map to only one value 
+
+
+
+Map methods
+-put(key, value): this method is used to add elements into the map collection with their key and values
+
+-get(key) : this method is used to get value of a specific key
+-If you try to get value for a key that does not exists, it will return null
+NOTE: there is no index used with Map
+
+-size() : this method is used to see size of the map collection
+-clear() : this method is used to clear all keys and values
+-containsKey(key) : it checks if given key is existing and returns a boolean
+-containsValue(value) : it checks if given value is existing and returns a boolean
+-remove(key) or remove(key, value) : these overloaded methods can be used to remove particular elements
+-replace(key, value) : this method is used to replace the value of the key
+
+-keySet() : this method returns all the keys as a Set (as they are all unique)
+-values() : this method returns a all the values as a Collection
+-entrySet() : this method returns all key-value pairs 
+
+
+HashMap vs LinkedHashMap
+-The only difference between these is HashMap does not keep any insertion order while LinkedHashMap will keep insertion point and store data as you put
+
+TreeMap
+-This will sort elements based on keys
+
+
+
+HashMap vs Hashtable
+-Hashtable and HashMap are the mostly used classes that are implementing Map interface
+-The difference between them HashMap allows 1 null key and many null values while Hashtable does not allow any null key or value
+-Hashtable is synchronized(thread-safe) while HashMap is not synchronized 
+
+
+HashMap 				LinkedHashMap 			TreeMap
+no insertion order 		keeps insertion order 	no insertion order 
+no duplicate keys 		no duplicate keys 		no duplicate keys
+only 1 null key 		only 1 null key 		no null keys
+as many null value 		as many null value 		as many null value
+
+
+
+
+
+
+
+
+
+
+
+
+

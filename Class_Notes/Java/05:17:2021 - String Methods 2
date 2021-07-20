@@ -1,0 +1,180 @@
+
+
+05/17/2021 - String Methods 2
+
+RECAP:
+
+String: It is a Java class that allows us to store a sequence of characters
+
+String class has many useful methods for us to use and modify data
+
+1.toLowerCase() -> converts a String to lowercase
+2.toUpperCase() -> converts a String to uppercase
+3.equals() 	-> compares 2 strings and returns true/false
+4.equalsIgnoreCase() -> compares 2 strings and returns true/false but ignores cases
+5.concat() -> combines 2 strings and creates a new one
+6.valueOf() -> converts primitives to String
+7.charAt() -> it gets the char at given index
+
+-return type method
+-returns a char
+-nonstatic method
+-it takes one argument - int
+
+public char charAt(int index){
+	//some other code statements
+	return char;
+}
+
+
+String s = "TechGlobal";
+
+charAt(5) 	-> l
+charAt(8) 	-> a
+charAt(10) 	-> StringIndexOutOfBoundException
+
+
+8.	indexOf(char)
+	indexOf(String)
+9. 	lastIndexOf(char)
+	lastIndexOf(String)
+
+String s = "TechGlobal";
+s.indexOf('G'); 	-> 4
+s.indexOf('e'); 	-> 1
+s.indexOf("h"); 	-> 3
+s.indexOf('l'); 	-> 5
+s.indexOf("lo"); 	-> 5
+s.indexOf("X"); 	-> -1 (not found)
+s.indexOf("Techglobal") -> -1 (not found)
+s.indexOf("TechGlobal") -> 0
+
+-indexOf() will always return the first index that is match
+-indexOf(String) will always return the index of first char of the argument
+-the method will return -1 if given char or string is not found in the given string
+
+-indexOf() and lastIndexOf() methods are return type and they return an int
+-they are non-static
+-they are overloaded method and there are 4 of them
+
+10. length()
+-it is used to find length of a specified string
+-This method is going to return the length as an int 
+-length = total number of characters in a string
+NOTE: space is also a character
+
+String s = "TechGlobal";
+s.length() 	-> 10
+
+String s = "TechGlobal School";
+s.length() 	-> 17
+
+-it is used to find length of a specified string
+-it is a return type method and it returns an int
+-it is a non-static method
+-it is non-args method
+
+11. trim()
+-it is used to remove whitespaces from both ends of a String
+-This method is going to return the given string back but clears spaces before and after the string
+-NOTE: it will take all spaces before and after the string
+
+-it is a return type and it returns a String
+-it is a non-static method
+-it is a non-args method
+
+
+12.	substring(index)
+	substring(beginIndex, endIndex)
+
+-We will learn 2 overloaded substring methods
+-they are used to extract the characters from a string
+-they are return types and returning strings
+-they are non-static methods
+-if given indexes are not found, then they will throw StringIndexOutOfBoundException
+
+
+13. startsWith()
+14. endsWith()
+
+String s = "TechGlobal";
+s.startsWith("Tech"); 	-> true
+s.endsWith("bal"); 		-> true
+
+s.startsWith("TechGlobal"); 	-> true
+s.endsWith("TechGlobal"); 		-> true
+
+-startsWith() method is used to check whether a string starts with the specified character(s)
+-This method is going to return true if the string starts with given sequence of character(s) and false if the string does not start with given sequence of character(s). 
+-So, the return type of this method is boolean
+
+-endsWith() method is used to check whether a string ends with the specified character(s)
+-This method is going to return true if the string ends with given sequence of character(s) and false if the string does not end with given sequence of character(s). 
+-So, the return type of this method is boolean
+
+
+-These methods are used to find out if a string starts or ends with another string
+-These are return types and they return boolean
+-They are non-static methods
+-Both taking one arg which is a string
+
+
+15. contains()
+-contains() method is used to check whether a string contains a sequence of characters or not
+-This method is going to return true if the string contains given sequence of characters and false if the string does  not contain given sequence of characters 
+-So, the return type of this method is boolean
+
+String s = "TechGlobal";
+s.contains("x"); 	-> false
+s.contains("tech") 	-> false
+s.contains("Tech") 	-> true
+s.contains("") 		-> true
+s.contains(" ") 	-> false
+
+-this method is used to check whether a string contains a sequence of characters or not
+-it is a return type method and returns a boolean
+-it is non-static
+-it takes a String as argument
+
+
+16. isEmpty()
+-isEmpty() method is used to check whether a string is empty or not
+-This method is going to return true if the string is empty and false if the string is not empty
+-So, the return type of this method is boolean
+-this method is used to check whether a string is empty or not
+-it is a return type method and it returns a boolean
+-it is a non-static method
+-it is a non-args method
+
+
+17. replace()
+
+TechCompany -> Company with Global
+
+METHOD CHAINING
+-We can use many methods in a single line by chaining them and this is called as method chaining in Java
+
+
+Raqi   -> 0 3 length()-1
+Sarah  -> 0 4
+Yasser -> 0 5  6-3 = 3
+
+s.charAt(0) -> always returns first char from given String 
+s.charAt(s.length()-1) -> always returns last char
+
+s.substring(0,3); -> the first 3 chars
+s.substring(s.length()-3); -> the last 3 chars
+
+
+
+
+
+
+
+
+
+
+
+
+
+

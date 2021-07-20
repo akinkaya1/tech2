@@ -1,0 +1,153 @@
+
+
+
+
+07/18/2021 - Exceptions
+
+-Errors and exceptions are known as unexpected result that breaks flow of the program
+-Both errors and exceptions are the subclasses of java.lang.Throwable class
+-Whatever line that we get an error or an exception, our program will break at this line and will not process further
+
+ERRORS:
+-Errors are the conditions which cannot get recovered by any handling techniques 
+-Errors are unchecked types and mostly occur at runtime
+-These are serious and not programmer's responsibility
+
+-StackOverFlowError, OutOfMemoryError
+
+EXCEPTIONS:
+-Exceptions can get recovered by try catch blocks or throw keyword
+-Exceptions are divided into two categories
+	1. Checked exceptions are known to the compiler at compile time like IOException
+	2. Unchecked exceptions are known to the compiler at runtime like ArrayIndexOutOfBoundException
+-It is mostly caused by the program written by the programmer. It is a BUG needs to be fixed
+
+-ArrayIndexOutOfBoundException, StringIndexOutOfBoundException
+NullPointerException, ConcurrentModificationException, ClassCastException, ArithmeticException
+
+What kind of exception can you get from Java and what is the reason?
+	-ArrayIndexOutOfBoundException
+	-StringIndexOutOfBoundException
+	-NullPointerException
+	-ConcurrentModificationException 
+	-ClassCastException 
+	-ArithmeticException
+	-StackOverFlowError
+
+How many types of Exception there are in Java?
+	1. Unchecked Exceptions : Runtime Exceptions
+			-ArrayIndexOutOfBoundException
+			-StringIndexOutOfBoundException
+			-NullPointerException
+			-ConcurrentModificationException 
+			-ClassCastException 
+			-ArithmeticException
+	2. Checked Exceptions : Compile Exceptions
+			-IOException
+			-SQLException
+			-ClassNotFoundException
+
+What is difference between Error and Exception?
+
+
+Checked Exceptions
+-These kinds of exceptions must be handled before a program is run
+-Our program will not compile until checked exception is handled
+-EX: InterruptedException, FileNotFoundException, IOException
+
+Unchecked Exceptions
+-These kinds of exceptions will be thrown when program is run
+-So, program compiles and does not show any error until we run the program
+-EX: StringOutOfBoundException, ClassCastException, NullPointerException
+
+
+
+
+HOW TO HANDLE EXCEPTIONS?
+1.  Adding exception to the signature of the method by using throws keyword
+This can be used especially with checked exception
+EXAMPLE: throws IOException
+
+2. try-catch blocks
+We can handle both checked and unchecked exceptions using try-catch blocks
+
+Syntax:
+try { 
+	// Block of code to try (test)
+} 
+catch(Exception e) { 
+	// Block of code to report error
+}
+
+-The try statement allows you to define a block of code to be tested for errors while it is being executed
+-The catch statement allows you to define a block of code to be executed, if an error occurs in the try block
+
+
+
+Can we use multiple catch blocks with one try block?
+-Yes, try block can be used with multiple catch blocks in some cases. This might be used when code executed in try block might throw multiple different exceptions and when you want to run different blocks of code for different errors
+
+NOTE: We cannot catch child exception under parent exception type. In this case catch block used for child exception will be unreachable. Compiler error
+
+
+Syntax:
+try { 
+	// Block of code to try 
+} 
+catch(ArrayIndexOutOfBoundsException e) { 
+	// Block of code to handle errors 
+}
+catch(Exception e) { 
+	// Block of code to handle errors 
+}
+
+
+FINALLY BLOCK
+-The finally block allow us to execute a final code after try...catch, regardless of the result
+-It is used to run a final block of code after try catch 
+-NOTE: try can ONLY be used either with catch or finally block
+-BUT it is optional to have only catch or finally block or both after try block
+
+
+
+
+final - finalize() - finally
+-There is no similarity between these but their name
+-finalize() is a method used for proper garbage collection
+-finally is a block used with try catch to handle exceptions
+-final is a keyword used with classes, methods and instance variables
+
+final instance variable : the value must be given and it cannot be changed
+final methods : these methods cannot be overridden
+final classes : these classes cannot be inherited
+
+
+
+throw keyword
+-The throw keyword allows us to create a custom error/exception
+-The throw statement is used together with an exception type
+EXAMPLE / throw new RunTimeException("exceptionMessage");
+
+-We can create both checked and unchecked exceptions
+-To create checked exception, extend your class to Exception class
+-To create unchecked exception, extend your class to RuntimeException class
+
+NOTE: 
+-In method overriding concept, if parent class method throws an exception, then child class method should also throw an exception
+-This exception must be same or  more specific exception, but it cannot be more general type of exception
+
+
+
+What is the difference between throw and throws keywords?
+-throw is used to create our own custom exceptions
+-throws is used to handle a checked exception by adding it to the method signature
+
+
+
+
+
+
+
+
+
+

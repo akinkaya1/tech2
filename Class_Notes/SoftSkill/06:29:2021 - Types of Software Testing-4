@@ -1,0 +1,75 @@
+
+
+06/29/2021 - Types of Software Testing-4
+
+Smoke Test: 
+
+- Smoke test is testing the manin functionaliity of the application.
+- It is documented. There are test cases are written for the functionalitis and stored in the project and bug management tool(Jira). 
+-And the test cases are automated as many as possible. And those automated test cases are set to run periodically and get the report of the test results.
+
+SANITY TEST:
+
+- it is performed when there is a small code or components added to application you are required to do quick test about the  functionality of the application witht new code.
+
+- Also after the bug fix, we end up doing quick check without following documented test cases or without executing the automation if the bug is fixed and functionlaity is working as expected.
+
+
+REGRESSION TEST
+
+ - After the bug fix and code addition, regression test is executed to make sure whole application is up and running.
+
+ automation for regression may take 5 to 8 hours.
+
+ not all the test cases can be automated. There are regression we need test manualy. So manual automation make  take days.
+
+ Manual regression takes longer because for UI we may end up testing our test case on different browsers and devices.
+
+ How do you decide which test cases will be automated? (Interviw Question)
+
+ After sprint starts, I also start writing my test cases for the User stories. After I comlete my test case writing, I am setting up "Test Case Review Meeting" with related developers, testers from my and other teams, product owner, and sytem architect. In that meeting, as a team we are deciding which test cases will be automated. Also we are checking if I cover all the scenarios. If not I am adding those scenarios too.
+
+ In Software Testing there is no assumption.
+
+ whitebox testing: Developers write unit test to test their codes while they are developing. This is an internal and it is not expose to end users. 
+
+ Blackbox testing: It is functional and nonfunctional testing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

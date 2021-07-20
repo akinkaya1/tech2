@@ -1,0 +1,164 @@
+
+
+
+06/28/2021 - Access Modifiers
+
+-it is something related to accessing classes and class members
+-Some access modifiers makes it easy to access some members of a class
+-On the other hand, some access modifiers rectrict the access to the some members of a class
+
+What are access modifiers?
+1. public
+2. protected
+3. default
+3. private
+
+Access modifiers can be used to define access level for class and class members (attributes, methods, constructors, blocks)
+
+NOTE: CLASS ITSELF CAN ONLY BE PUBLIC OR DEFAULT
+
+	project
+		package1
+			packageA
+				ClassX
+				ClassY
+			packageB
+		package2
+			ClassA
+			ClassB
+		package3
+			ClassN
+			packageZ
+				ClassM
+				ClassK
+
+
+classK{
+	private int age;
+	String name; // default
+	protected size;
+	public color;
+
+	//private members can only be used in the same class
+	//default class and members can only be used in the same package
+	//protected members can only be used in the same package
+		but when you inherit, they can be used anywhere in the project
+	//public members can be used everywhere in the project
+}
+
+
+
+OOP Principles
+Encapsulation
+Inheritance
+Abstraction
+Polymorphism
+
+package1
+class Animal{
+	protected String name;
+
+}
+
+package2
+class Dog{
+	
+}
+
+package3
+class Cat extends Animal{
+	
+}
+
+parent - child
+Animal - Dog
+Animal - Cat
+Dog is an Animal
+Cat is an Animal
+
+
+DEFINING ACCESS LEVEL FOR CLASSES
+-Class can only be default or public
+-Class can never be protected or private
+
+class Tesla{
+	//default class
+}
+
+public class Mercedes{
+	//public class
+}
+
+What is the difference bt default and public classes?
+-default and public classes can be used in the same package with no issues
+-And in the same package, there is no need to import
+-public class can be used in any package in the project
+	if it is same package, there is no need to import
+	if it is different package, then we need to import
+-default class can be used in the same class and no need for import BUT default class cannot be used outside of the package it is created
+
+
+
+CLASS MEMBERS ACCESSIBILITY
+1.Constructor
+-Constructor can be public and this makes it accessible anywhere in the project
+-Constructor can be default and this makes it accessible only in the same package
+-Constructor can be private and this makes it accessible only in the same class
+-Constructor can be protected and this makes it accessible to be used also in child classes
+
+2.Instance variables - attributes - fields - states
+-default attributes can only be accessed in its own package
+-private attributes can only be accessed in its own class
+-public attributes can be accessed anywhere in the project
+
+3.Methods - functions - behaviors
+-default methods can only be accessed in its own package
+-private methods can only be accessed in its own class
+-public methods can be accessed anywhere in the project
+
+NON-ACCESS MODIFIERS
+-static
+-Class cannot be static
+-Constructor cannot be static
+-Methods, attributes and blocks can be static
+
+-final
+-Class can be final - final class cannot be inherited, parent
+-Attributes can be final - its value cannot be changed
+-Methods can be final - final methods cannot be overridden
+
+
+NOTE: A class can be created in another class
+Inner class or nested class
+
+outer class A{
+	
+	inner class B{
+
+	}
+}
+
+class B belongs to A
+Outer class A cannot be static, cannot be protected, cannot be private
+Inner class B can be static, can be protected, can be private 
+
+
+
+Principles
+
+Collections 2 classes
+Exceptions 2 classes
+Files 1 class
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+
+
+
+06/06/2021 - Arrays - 3
+
+RECAP:
+-It is a collection
+-It allows us to store multiple data that are same data type
+-Array is always fixed size
+
+Syntax:
+int[] numbers = new int[5]; // length = 5
+String[] objects = {"pen", "book", "laptop"}; // length = 3
+
+HOW TO FIND SIZE OF ARRAY?
+arrayName.length
+
+What is the difference between length and length()?
+-length is used to find the size of the array and it will return the size as an int. It is basically, how many elements you have in an array
+int size1 = numbers.length; // size1 = 5
+int size2 = objects.length; // size2 = 3
+
+-length() is a String class method and used to find the length of a String. It is basically, how many characters you have in a single String
+
+String cName = "TechGlobal";
+int size3 = cName.length(); // size3 = 10
+
+
+HOW TO SORT AN ARRAY?
+-sort() method can be used to sort the elements of the array
+-it is a void and a static method
+-Arrays.sort(objects); // [book, laptop, pen]
+
+HOW TO PRINT AN ARRAY?
+-toString() method is used to convert array into a String
+-Arrays.toString(objects); //[book, laptop, pen]
+-It is a static and return type method. 
+-It takes an array argument and returns a String
+
+
+How to find first and last element in an array?
+String[] objects = {"pen", "book", "laptop"};
+
+objects -> String array
+objects[0] -> String -> pen
+objects[1] -> String -> book
+objects.length -> int -> 3
+
+first element = objects[0]
+last element = objects[objects.length-1] // 
+
+
+For each loop - Enhanced for loop
+SYNTAX:
+for(dataType element: arrayName){
+	// block of code to execute
+}
+
+
+HOW TO CHECK IF ARRAY HAS A PARTICULAR ELEMENT?
+String[] objects = {"Remote", "Mouse", "Keyboard", "iPad"};
+
+-binarySearch() method can be used to search an array for a particular element
+-binarySearch() method is static and return type
+-it takes 2 arguments - array, element
+-it returns int
+negative numbers -> it means element is not found in the array
+positive numbers -> it means element is found in the array
+zero -> it means element is found in the array
+
+
+STEPS TO SEARCH AN ELEMENT
+-sort the array (otherwise, you may get wrong result)
+-then, Java will check if element exists in the array
+	if so, it will return the index of the element
+	if not, it will return -insertion index -1
+
+
+
+
+
+

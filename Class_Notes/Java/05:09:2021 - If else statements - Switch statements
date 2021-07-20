@@ -1,0 +1,168 @@
+
+
+
+05/09/2021 - If else statements - Switch statements
+
+
+RECAP:
+-if else statements in Java can be used to control the flow the program
+
+-if statements
+if(condition){
+	// block of code to be executed
+}
+
+-In if statements, the block of code will be executed only if the condition is true
+
+-if else statements
+if(condition){
+	// block of code to be executed
+}
+else{
+	// another block of code to be executed
+}
+
+
+-nested if statements
+if(condition){
+	// block of code to be executed
+
+	if(condition){
+		// block of code to be executed
+	}
+}
+
+-nested if else statements
+this is when we call if else statement in another if or else block
+
+if(condition){
+	// execute this block
+}
+else{
+	// execute this block
+}
+
+-50 to 50 
+if number is positive you won 10 points
+if number is more than 25, then you won extra 10 points
+if number is 7 (GOLD NUMBER), you won extra 100 points
+
+if(number > 0){
+	//10 points
+	if(number == 7){
+		// 100 bonus points
+	}
+	else{
+		// If the number was 7, you wuould get 100 more bonus
+	}
+	if(number > 25){
+		// 10 points
+	}
+	else{
+		// If the number was more than 25, you wuould get 10 more bonus
+	}
+}
+else{
+	// LOSER!!!
+}
+
+
+- if else-if else statements
+
+a number can be positive or negative or zero
+
+if(number > 0){
+	// it is positive
+}
+else if(number < 0){
+	// it is negative
+}
+else{
+	// it is zero
+}
+
+int workDay = 3;
+Monday 		-> Black
+Tuesday 	-> Red
+Wednesday 	-> Green
+Thursday 	-> Blue
+Friday 		-> Yellow
+
+if(workDay == 1){
+	// wear Black
+}
+else if(workDay == 2){
+	// wear Red
+}
+else if(workDay == 3){
+	// wear Green
+}
+else if(workDay == 4){
+	// wear Blue
+}
+else if(workDay == 5){
+	// wear Yellow
+}
+else{
+	// it is weekend or holiday
+}
+
+
+NOTE: if can be used without else but
+else CAN NEVER BE USED without if
+-it is ambiguous - confusion and will give a compiler error
+-else is always optional
+
+COMPILER ERROR -> these are the errors that are shown by compiler immeadiately before we run the code. When there is a compiler error, you can not run your code. These are usually syntax errors
+
+RUNTIME ERROR -> these are the errors that we get when run the code
+
+Ternary Operator
+-Java ternary operator can be used instead of if-else statement
+-It is used a lot in Java programming
+
+
+SWITCH STATEMENTS
+-It is kind of an if else statement but based on cases instead of conditions
+-Syntax:
+switch(expression) { 
+	case value: 
+		// code to be executed
+	break; // optional 
+	case value : 
+		// code to be executed
+	break; // optional
+	default: // Optional 
+		// code to be executed
+}
+
+- byte, short, int, char, String and Enum can be used in switch statement 
+- Java allows to have any number of case statements within a switch
+- Each case is followed by “:” (colon)
+- The value of a case must be the same data type as the variable in the switch
+
+- we cannot have 2 or more cases same
+- default is optional and if none of the cases matched, then default will be executed
+- break is also optional, if we don't break for matching case, then it will continue executing other cases as well until a break statement reached.
+- It will always start execution from the case that matches with variable, and continue till first break statement
+
+
+NOTE: Unreachable code: it is code that will never be executed
+
+BREAK STATEMENT
+In Java break statement is used for the termination
+It is used with switch statements and loop statements
+Syntax:
+break;
+
+
+
+
+
+
+
+
+
+
+
+

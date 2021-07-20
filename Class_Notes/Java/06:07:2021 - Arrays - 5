@@ -1,0 +1,47 @@
+
+
+06/07/2021 - Arrays - 5
+
+-Arrays we have learned till now are called one-dimensional arrays. However, we can declare multidimensional arrays in Java
+-A multi dimensional array is an array containing one or more arrays
+-Multi dimensional arrays are useful for creating tables
+-When declaring two dimensional arrays, we don't have to set inner array sizes because subarray(inner array) can be any size for each outer array
+-If we set inner size when declaring the two-dimensional array, that means all inner array sizes are same
+
+TASK
+Create a two dimensional array that holds numbers below
+
+12 15 23
+77 23 89
+
+00 01 02
+10 11 12
+
+TASK
+1 1 1 1
+2 3 4 5
+2 3 4 5  [3][4]
+
+TASK
+1 0 1
+2 2 2
+3 4 4
+3 4 5 [4][3]
+
+print entire array
+print 5 and 0 from this 2 dimensional array
+
+TASK
+Salih Yasser Volkan
+Raqi  Sarah  Maryna [2][3]
+
+String[][] names = new String[2][3];
+names[0][0] = "Salih";
+
+Print the entire array
+Print Raqi and Yasser from there
+
+
+
+
+

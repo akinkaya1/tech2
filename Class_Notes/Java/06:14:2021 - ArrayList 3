@@ -1,0 +1,38 @@
+
+
+
+06/14/2021 - ArrayList 3
+
+RECAP:
+
+Array vs ArrayList
+-Array has a fixed size while ArrayList is dynamic considering size. This means, you cannor add or remove elements from array but you can add or remove elements to/from an ArrayList
+-ArrayList can be used with Objects only, but array can be used with both objects and primitives
+-ArrayList has many useful methods to manipulate data but not array
+-We can find the size of the array with length method, and we can find the size of the ArrayList with size() method
+-We can search for an element in array using binarySearch() method while we can use contains() method to search for an element in an ArrayList
+-SYNTAX
+-Access element 
+-Add element
+-Print
+-Sorting
+
+
+ArrayList vs LinkedList
+-LinkedList implements Queue and Deque and it has more useful methods to manipulate data
+-LinkedList is faster than ArrayList when we remove or add elements
+-LinkedList allocates more memory compared to ArrayList as it holds each data with 3 information
+
+
+HOW TO SORT AN ARRAYLIST OR LINKEDLIST?
+-Collections.sort(list);
+
+
+
+
+
+
+
+
+
+

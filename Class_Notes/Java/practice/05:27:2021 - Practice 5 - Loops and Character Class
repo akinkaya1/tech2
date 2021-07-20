@@ -1,0 +1,42 @@
+
+
+
+05/27/2021 - Practice 5 - Loops and Character Class
+
+ASCII
+space -> 32
+digits -> 48 to 57 both included
+uppercase letters -> 65 to 90 both included
+lowercase letters -> 97 to 122 both included
+
+Instead of ASCII, we can use Character class methods to run some specific programs, especially when we are curious about a char being uppercase, lowercase, digit, letter or so.
+
+1. isLetter(char) -> this method takes a char as argument and returns a boolean. It determines whether the specified char value is a letter
+
+
+2. isDigit(char) -> this method takes a char as argument and returns a boolean. It determines whether the specified char value is a digit
+
+
+3. isLetterOrDigit(char) -> this method takes a char as argument and returns a boolean. It determines whether the specified char value is a letter or a digit
+
+
+4. isWhitespace(char) -> this method takes a char as argument and returns a boolean. It determines whether the specified char value is a white space
+
+
+5. isLowerCase(char) -> this method takes a char as argument and returns a boolean. It determines whether the specified char value is a lowercase letter
+
+
+6. isUpperCase(char) -> this method takes a char as argument and returns a boolean. It determines whether the specified char value is an uppercase letter
+
+
+
+
+
+
+
+
+
+
+
+
+

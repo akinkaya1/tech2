@@ -1,0 +1,94 @@
+
+
+
+04/29/2021 - Practice 1
+
+1.Print each statement below in one println() statement
+
+My favorite author is “Stefan Zweig”
+My favorite quote is “All our dreams can come true, if we have the courage to pursue them.” 
+In my free time:
+-I “read books”,
+-I “swim”,
+-I “watch movies”.
+
+NOTE: double quotations, escape character to move to next line
+
+Escape character "" -> if you are going to use double quotation in double quotation, you need to use \ (back slash) in front of each inner double quotation
+
+Example ->   "abc \"QWQ\" xyz"
+
+\n -> this moves our cursor to next line
+\t -> this inserts one tab space at the beginning of string
+
+
+2.Do exercises on https://www.w3schools.com/java/default.asp
+
+1. Primitives
+2. Reference types (objects) - non-primitives
+
+Wrapper classes are object representation of primitives
+
+JAVA OPERATORS
+Assignment operator -> = equal sign
+Arithmetic operators -> + plus used for addition
+						- minus used for subtraction
+						* star used for multiplication
+						/ slash used for division
+						% percentage used to find remainder
+
+15 % 6 = 3		-> 15 = 2*6 + 3
+5 % 4 = 1		-> 5 = 4*1 + 1
+23 % 5 = 3 		-> 23 = 5*4 + 3
+25 % 5 = 0      -> 25 = 5*5 + 0
+
+Any number's remainder by itself will be zero
+100 % 100 = 0	-> 100 = 100*1 + 0
+7 % 7 = 0		-> 7 = 7*1 + 0
+
+if we are looking a remainder of x number with number y and y > x, then remainder is x itself
+
+15 % 20 = 15  	-> 15 = 0*20 + 15
+5 % 32 = 5 		-> 5 = 0*32 + 5
+
+
+3. Write a program that asks user below questions
+1 - What is your full name?
+2 - What is your age?
+3 - What are your favorite activities?
+4 - Do you like playing video games? true/false
+5 - What are your favorite colors?
+6 - Do you like Tesla? true/false
+7 - What kind of cars do you like?
+8 - What is your favorite letter?
+9 - Which countries you would like to visit?
+10 - What is the result of 5/2?
+
+ANSWERS TO QUESTIONS MUST FOLLOW AS BELOW
+1 - John Doe
+2 - 40
+3 - Listening to music, hanging out
+4 - false
+5 -Yellow, green, red, blue
+6 - true
+7 - Mercedes, BMW, Maserati
+8 - T
+9 - Italy, Mexico, Brasilia
+10 - 2.5
+
+EXPECTED RESULTS OF PROGRAM
+User’s full name is = John Doe
+User’s age is = 40
+User’s hobbies are = Listening to music, hanging out
+Does user like video games = false
+User’s favorite colors are = Yellow, green, red, blue
+Does user like Tesla = true
+User’s favorite cars are = Mercedes, BMW, Maserati
+User’s favorite letter is = T
+User wants to visit countries = Italy, Mexico, Brasilia
+The result of 5/2 = 2.5
+
+
+
+
+

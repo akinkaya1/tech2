@@ -1,0 +1,105 @@
+
+
+
+07/18/2021 - File Handling
+
+
+-File is a folder/directory/storage to store some data to process later
+
+EXAMPLE:
+.pdf
+.png
+.xls
+.jpeg
+.txt
+.doc
+.java
+.pptx
+
+-File handling is an important part of any application as we need to read or write data from external files sometimes
+-There are multiple ways of creating, reading, updating, and deleting files in Java. This is required while dealing with many applications
+-The File class from the java.io package, allows us to work with files
+Example -> File, FileReader, FileWriter
+-To use the File class, we need to create an object of the class, and import it
+-We need to specify the filename or directory name to create the file
+Syntax:
+File myObj = new File(”fileName.txt"); // Specify the fileName
+
+myObj.createNewFile(); // this throw an IOException, so handle it
+
+-createNewFile() method is used to create a new file, and it returns a boolean 
+-it will return true if file is created
+-it will return false if file is not created for some reasons
+
+NOTE:
+This method throws an IOException if an error occurs (if the file cannot be created for some reason) and we can handle this exception with try-catch blocks
+
+-File class has many useful methods for creating and getting information about files
+canRead()
+canWrite()
+getName()
+getAbsolutePath()
+delete()
+exists()
+list()
+mkdir()
+
+
+-To write to a file in Java, we can use the FileWriter class together with its write() method to write some text to the file 
+-NOTE THAT when you are done writing to the file, you should close it with the close() method
+
+EXAMPLE:
+
+FileWriter fileWriter = new FileWriter("fileName.txt"); fileWriter.write(“Jennifer”); 
+fileWriter.write(“Adam”); 
+fileWriter.write(“Lionel”); 
+fileWriter.close();
+
+
+-To read to a file in Java, we can use the Scanner class
+-Note that when you are done reading the file, you should close it with the close() method
+-Scanner provides 2 methods to read files line by line in while loop
+	hasNextLine()
+	nextLine()
+
+EXAMPLE
+File file = new File("fileName.txt"); 
+Scanner fileReader = new Scanner(file); 
+while (fileReader.hasNextLine()) { 
+     System.out.println(fileReader.nextLine()); 
+} 
+fileReader.close();
+
+
+-To delete a file in Java, we can use the delete() method
+-We can also delete a folder, but it must be empty
+-delete() method returns a boolean that we can check if file or folder is deleted or not
+
+EXAMPLE:
+File file = new File("fileName.txt"); 
+if (file.delete()) { 
+     System.out.println("Deleted the file: " + file.getName()); 
+} 
+else { 
+      System.out.println("Failed to delete the file.");
+}
+
+
+java.util -> collections
+java.lang -> exceptions, String, StringBuilder, StringBuffer,System
+java.io -> files
+java.math -> math related classes
+java.time -> time related classes
+
+
+path: folder structure to address your file or folder
+it is the location where your file is 
+
+/users/{userName}/Desktop/MyPhotos/NaturePhotos
+
+
+
+
+
+
+

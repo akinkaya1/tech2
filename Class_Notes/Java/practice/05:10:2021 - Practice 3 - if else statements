@@ -1,0 +1,36 @@
+
+
+
+05/10/2021 - Practice 3 - if else statements
+
+-if else statement short cut
+if(condition){
+	// 1 statement
+}
+else{
+	//another statement
+}
+
+This can be written in this way as well
+if(condition) // 1 statement
+else //another statement
+
+THIS CAN HAPPEN ONLY IF YOU ARE RUNNING ONE LINE OF CODE
+
+NOTE: new keyword in Java is used to create new objects. So, whenever new keyword is used, it means an object created
+EX/ Scanner scan = new Scanner(System.in);
+
+
+number divided by 2 and 5 means-> number divided by 10
+
+random % 2 == 0 && random % 5 == 0
+
+random % 10 == 0
+
+number can be divided by 4 and 5 at the same time 20
+random % 20 == 0
+random % 4 == 0 && random % 5 == 0
+
+
+number can be divided by 2 and 3 at the same time
+random % 6 == 0

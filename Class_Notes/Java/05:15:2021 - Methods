@@ -1,0 +1,126 @@
+
+
+05/15/2021 - Methods
+
+ASCII
+
+32 -> space
+48 to 57 -> digits from zero to nine
+65 to 90 -> uppercase letters from A to Z
+97 to 122 -> lowercase letters from a to z
+
+33 to 47 and 58 to 64 and 91 to 96 and 123 to 127 are special characters
+
+
+Method: 
+-it is a block of code that executes a specific task
+-it has a purpose
+EX/ max(), min(), abs(), print(), println(), nextInt(), nextLine(), valueOf(), parseInt(), parseDouble()
+-Every Java class provides us a lot of useful method to be used in our programs
+-We need a method that generates a random number bt 1 to 10
+or 1 to 50 or 1 to 100
+-getRandomNumberBt1to10(); we can create this
+
+HOW:
+First, we will create our own class and create our methods in this class
+Then, those new methods can be used in other classes to run specific tasks
+
+There are 2 ways to use Java methods in our programs
+
+1. Math.max() or Math.min() methods can be called with their class name
+-Those methods are static
+
+2. First creating object, and calling methods with object
+Scanner and Random methods are example to that kind of methods
+-Those metthods are not static
+
+Random r = new Random();
+int container = r.nextInt();
+
+Scanner s = new Scanner(System.in);
+String container = s.nextLine();
+
+NOTE: static methods can be accessed with className directly, but non-static methods can be called with an object of clas
+
+THERE ARE 2 TYPES OF METHODS IN JAVA
+1. void types
+	-does not return anything but executes a block of code
+	-return keyword cannot be used with this method
+	-can be created with void keyword
+
+2. return types
+	-does return something
+	-return keyword MUST be used, otherwise it is a compiler error
+	-cannot ue void keyword
+
+NOTE:
+Each time you run a method, all the code block will be executed
+
+NOTE:
+we cannot have any code under return statement, It is an unreachable code and will cause a compiler error
+
+NOTE:
+static methods are accessible with className only, they cannot be accessed with objects
+non-static methods are accessible with objects only, they cannot be accessed with className
+
+
+NOTE:
+Custom methods are specific to project that you are working on currently. They cannot be used in other projects unless you share those packages and classes with others.
+
+
+-METHOD PARAMETERS (ARGUMENTS)
+-A method parameter is a value accepted by the method
+-A method can have any number of parameters
+-Parameters act as variables inside the method
+
+
+CREATING A METHOD
+1. Is it a return type or void method?
+2. if it is return type, then what it returns?
+3. Is it taking any parameter or not?
+4. is it static or not?
+
+
+NOTE:
+void methods cannot be used in System.out.println(),  and if you try that, you will get an compiler error
+
+
+NOTE:
+both return type and void type methods can be static or non-static
+
+METHOD OVERLOADING
+-In Java, two or more methods  may have the same name
+
+-This is allowed if they differ in parameters (different number of parameters, different types of parameters, or both).
+
+findMax(int i1, int i2)
+findMax(int i1, int i2) -> compiler error and, it can be solved with method overloading
+
+-METHOD SIGNATURE -> it is method name + parameters of the method
+
+-These methods are called overloaded methods and this feature is called method overloading
+
+-Note: Multiple methods can have the same name if the number and/or type of parameters are different
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

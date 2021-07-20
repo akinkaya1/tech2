@@ -1,0 +1,34 @@
+
+
+06/22/2021 - Types of Software Testing-3
+
+Smoke Test: 
+
+- Smoke test is testing the manin functionaliity of the application.
+- It is documented. There are test cases are written for the functionalitis and stored in the project and bug management tool(Jira). 
+-And the test cases are automated as many as possible. And those automated test cases are set to run periodically and get the report of the test results.
+
+SANITY TEST:
+
+- it is performed when there is a small code or components added to application you are required to do quick test about the  functionality of the application witht new code.
+
+- Also after the bug fix, we end up doing quick check without following documented test cases or without executing the automation if the bug is fixed and functionlaity is working as expected.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

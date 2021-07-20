@@ -1,0 +1,155 @@
+
+
+
+06/17/2021 - ArrayList 4
+
+RECAP:
+
+-Array   			ArrayList/LinkedList
+-Collection is storing same data in one variable
+
+-Array is fixed sized but ArrayList/LinkedList are dynamic
+-Array size can be found with arr.length while ArrayList/LinkedList size can be found with list.size()
+-Array does not provide methods to manipulate data while ArrayList/LinkedList provides a lot of useful methods to manipulate data. 
+EXAMPLE: add(), addAll(), set(), get(), remove(), removeAll(), clear(), contains(), indexOf(), lastIndexOf(), size()
+
+MORE METHODS FOR LINKEDLIST -> getFirst(), getLast(), addFirst(), addLast(), peek(), poll()
+
+-Array can be used with both primitives and reference types (objects) but ArrayList/LinkedList can be used only with reference types
+
+
+-How to convert Array to ArrayList?
+1.Manual way with for each or fori loop
+	a. Create your array and store elements
+		String[] arr = {"Remote", "Screen", "Book"};
+
+	b. Create an empty ArrayList
+	List<String> list = new ArrayList<>();
+
+	c. Run a loop and add each value from array to ArrayList
+	for(String s: arr){
+		list.add(s);
+	}
+
+
+2.Using Arrays.asList() method
+	a. Create your array and store elements
+		String[] arr = {"Remote", "Screen", "Book"};
+
+	b. Create ArrayList and add your array into parantheses of list
+	List<String> list = new ArrayList<>(Arrays.asList(arr));
+
+
+3.Using Collections.addAll() method
+	a. Create your array and store elements
+		String[] arr = {"Remote", "Screen", "Book"};
+
+	b. Create an empty ArrayList
+	List<String> list = new ArrayList<>();
+
+	c. Call Collections.addAll() method and add these as arguments
+	Collections.addAll(list, arr);
+
+
+-How to convert ArrayList to Array?
+1. Manual way using fori loop
+	a. Create your ArrayList and store elements
+	List<String> list = new ArrayList<>();
+	list.add("Remote");
+	list.add("Screen");
+	list.add("Book");
+
+	b. Create an empty Array
+	String[] arr = new String[list.size()];
+	
+
+	c. Run a loop and add each value from ArrayList to Array
+	for(int i = 0; i < list.size(); i++){
+		arr[i] = list.get(i);
+	}
+
+2. Using toArray() method
+	a. Create your ArrayList and store elements
+	List<String> list = new ArrayList<>();
+	list.add("Remote");
+	list.add("Screen");
+	list.add("Book");
+
+	b.call toArray() method to convert your list to an Array
+	Object[] arr = list.toArray(); // it returns an object array
+
+
+-How to convert ArrayList to a LinkedList?
+	a. Create your ArrayList and store elements
+	List<String> list = new ArrayList<>();
+	list.add("Remote");
+	list.add("Screen");
+	list.add("Book");
+
+	b. Create a LinkedList and pass list as argument to parantheses
+	List<String> linkedList = new LinkedList<>(list);
+
+
+-How to convert LinkedList to an ArrayList?
+	a. Create your LinkedList and store elements
+	List<String> linkedList = new LinkedList<>();
+	linkedList.add("Remote");
+	linkedList.add("Screen");
+	linkedList.add("Book");
+
+	b. Create a ArrayList and pass linkedList as argument to parantheses
+	List<String> list = new ArrayList<>(linkedList);
+
+
+OTHER COLLECTIONS THAT WE WILL COVER IN THE FUTURE
+Set<String> list = new HashSet<>();
+Set<String> list = new LinkedHashSet<>();
+Set<String> list = new TreeSet<>();
+
+Map<String, String> list = new HashMap<>();
+Map<String, String> list = new HashTable<>();
+Map<String, String> list = new LinkedHashMap<>();
+Map<String, String> list = new TreeMap<>();
+
+DEQUE, QUEUE
+
+
+NOTE:
+DO NOT USE ANY LOOP WHEN YOU ARE REMOVING ELEMENTS FROM A LIST
+-Because, you should not be changing the iteration count while looping
+-They are either taking more effort and execution time or throwing exception
+
+
+ITERATOR
+-An Iterator is an object that can be used to loop through collections, like ArrayList and HashSet
+-We can use iterator to loop through all collections that extends to Iterable interface
+-Iterator provides 3 useful methods to use
+hasNext() -> returns true if there are more elements in the collection or false otherwise
+next() -> gets next element from the collection
+remove() -> removes the element from collection that is currently retrieved
+-NOTE: Trying to remove items using a for loop or a for-each loop would not work correctly because the collection is changing size while the code is trying to loop
+
+ArrayList<dataType> list = new ArrayList<>();
+
+list.add(element1);
+list.add(element2);
+list.add(element3);
+list.add(element4);
+
+//Put elements in a queue using iterator
+Iterator<dataType> myIterator = list.iterator();
+
+while(myIterator.hasNext()){
+	//get next and manipulate some element
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+
+
+
+06/03/2021 - Arrays - 1
+
+-Arrays is a class stored java.util package
+-Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value
+-Array is one of the collection types in java
+-Collection is storing multiple similar items in one place
+-By using an Array, we can store many similar items/elements in one variable
+
+-To declare an array, define the variable type with square brackets
+
+EXAMPLE:
+How to create an array
+
+SYNTAX:
+dataType[] variableName = new dataType[size];
+
+1. String array
+String[] fruits = new String[10];
+
+2. int array (primitive)
+int[] numbers = new int[3];
+
+3. char array (primitive)
+char[] letters = new char[4];
+
+NOTE: We have to declare the size - length of the array when we initialize it. Otherwise, we will get a compiler error
+
+-Size defines how many elements that we are going to store in the array
+-ELEMENT: each data we store in array is known as an element of that array
+
+HOW TO PRINT AN ARRAY
+-We can use toString() method to convert array to a String and print that String
+
+-toString() method is a return type and it returns a String. It is also static and can be called with class name (Arrays)
+
+
+HOW TO GET THE SIZE OF THE ARRAY
+-size is how many elements array has
+-length method can be used to get size of the array
+
+EXAMPLE
+int[] arr = new int[13];
+System.out.println(arr.length); // 13
+
+
+DEFAULT VALUES FOR DIFFERENT ARRAYS
+String  -> null (same for all other objects like Wrappers)
+int 	-> 0 	(byte, short and long are same)
+double 	-> 0.0 	(float is same)
+boolean -> false
+char 	-> nothing
+
+
+
+
+
+
+
+

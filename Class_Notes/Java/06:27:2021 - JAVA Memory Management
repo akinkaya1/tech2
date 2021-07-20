@@ -1,0 +1,95 @@
+
+
+
+06/27/2021 - JAVA Memory Management
+
+STACK-HEAP
+
+-Stack is where methods, local variables and object references are stored
+-When you run a program, different layers will be created in stack and they will be executed in the order of program (Last in, first out)
+-Heap is where objects (instances) are stored
+-Accessing object is slower compared to accessing a local variable
+
+
+STRING POOL
+-String is an object (reference type)
+-There are 2 ways to create String
+	1. String s1 = "value";
+	2. String s2 = new String("value");
+
+-String that created without new keyword will be stored in the String Pool, a special area in the heap to store Strings
+
+-The reason of having of having String Pool is to save memory
+
+/*
+    When we create a String without new keyword
+    First, it checks the pool to see if we have the value in the pool
+        -If we have the value in the pool, then Java does not create a new String value in the pool and it uses the existing value
+         -If the value is not found in the pool, then a new String value is created in the pool
+*/
+
+What is the difference between == operator and equals() method?
+== is one of the relational operators and it is used to find if both sides of the operator are equal to each other. It will return a boolean, either true or false based on the comparison
+== is mostly used with primitive data types and should not be used with reference types (objects)
+-When == is used with reference types, it compares their location in the memory and each object created with new keyword will have a unique location. That’s why, although the object variable values are same, == will return a false since it compares their location and locations are obviously different.
+-equals() is mostly known to be used with String objects but String is not the only class that has equals() method. -Wrapper classes, Arrays, ArrayList, Vector and other collections also has equals() method and this method is used to check 2 objects of same data type has same value or not and return a boolean as true or false
+EXAMPLES
+String str1 = “Tech”;
+String str2 = “Global”;
+System.out.println(str1.equals(str2)); // this statement will print false as 2 String object values are not equal
+
+
+
+
+GARBAGE COLLECTION
+-Garbage means unreferenced objects (objects that lost their references)
+-Garbage Collection is a process of destroying objects that lost references
+-Garbage Collection runs automatically (implicitly) for better memory management in Java
+-NOTE: Garbage Collection applies only to reference types data (objects)
+
+-NOTE: Although garbage collection happens implicitly, we can do explicitly as well by calling System.gc() method or Runtime.getRunTime().gc() methods
+
+
+finalize() method
+-finalize() method can be used to run a block of code before object reference is garbage collected
+-Purpose of using this method is to do proper clean up before removing the object
+-By default, finalize() method is empty. However, you can write your own finalize method to take certain action
+-This method is located in Object class and can be overridden wherever it is needed
+
+
+MUTABLE - IMMUTABLE
+-String is immutable
+-It means once the value is assigned, it will never change again
+-Mutable is something that we can change
+-Mutable versions of String are StringBuffer and StringBuilder
+
+String greeting = "Hello"; // pool
+greeting = "Hello!"; // pool
+
+HOW TO USE STRINGBUFFER AND STRINGBUILDER
+StringBuffer sb = new StringBuffer("Hello");
+StringBuilder sb = new StringBuilder("Good evening");
+
+-StringBuilder is faster than StringBuffer
+-NOTE: StringBuffer is thread safe (synchronized), that is why it is slower compared to StringBuilder
+
+-thread-safe -> synchronized
+
+
+-StringBuffer and StringBuilder has a lot of useful methods to manipulate data like append(), insert(), delete(), reverse()
+-StringBuffer and StringBuilder can be converted to String by toString() method
+-How to create StringBuffer and StringBuilder
+StringBuffer sb = new StringBuffer(“anyString”);
+StringBuilder sb = new StringBuilder(“anyString”);
+
+
+
+
+
+
+
+
+
+
+
+

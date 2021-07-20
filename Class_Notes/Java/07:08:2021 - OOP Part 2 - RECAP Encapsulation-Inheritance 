@@ -1,0 +1,195 @@
+
+
+
+07/08/2021 - OOP Part 2 - RECAP Encapsulation-Inheritance
+
+OOP - Object-Oriented Programming
+-Java is an Object-Oriented Programming Language
+-The core concept of the object-oriented approach is to break complex problems into smaller objects. So, Object-oriented simply known as an approach to programming that breaks a programming problem into objects
+-We have packages in Java like lang, io, util
+-We have many classes inside these packages
+-We have thousands of useful methods and data inside these classes
+-We use these methods by their class or objects
+-Everything in Java is associated with classes and objects
+-Different Java objects can interact with each other 
+-Object class is parent to any other class by default
+
+CLASS: Blueprint/template from where many objects can be created
+OBJECT: Instance of a class
+
+CLASS MEMBERS
+1. Instance variables - attributes of a class (instance of a class)
+2. Methods - behaviors of a class (instance of a class)
+3. Constructors - special method helping to instantiate objects
+4. Blocks - used to initialize instance variables
+
+
+
+class Chair{
+	public Chair(){
+		//default contructor
+	}
+
+	//instance variables that defines what chair has
+	String name;
+	String color;
+	String material;
+	double price;
+
+	{
+		material = "Wooden";
+	}
+
+	//methods thatd defines what chair does
+	stands(){
+
+	}
+
+}
+
+Chair chair1 = new Chair();
+
+
+OOP-PRINCIPLES
+1. Encapsulation
+2. Inheritance
+3. Abstraction
+4. Polymorphism
+
+
+ENCAPSULATION
+-Encapsulation is making sure that "sensitive" data is hidden from users
+-It is restricted direct access to instance variables (private)
+and providing indirect access (public getters and setters)
+-We need encapsulation to protect instance variables from being accessed directly
+
+HOW ACHIEVE ENCAPSULATION
+-Make instance variables private
+-Provide public setters and getters methods
+
+
+WHY WE NEED ENCAPSULATION?
+-Increased security of data
+-Better control of class attributes and methods
+-Class attributes can be made read-only (if you only use the get method), or write-only (if you only use the set method)
+
+GETTERS - SETTERS 
+-set method enable us to set a VALUE for private instance variable
+-set method is used to WRITE
+-VALUE needs to be an argument
+-The dataType of argument MUST be same as the dataType of instance variable it is set for (otherwise, compiler error)
+-set method is always void type
+-get enable us to read the VALUE for private instance variable
+-get method is used to READ
+-get method does not take any argument
+-it is a return type method and it returns whatever is currently instance variables stores. That's why return type must be as same dataType of instance variable
+
+
+EXAMPLE:
+	private String color;
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+QUESTION
+What does getter will return if you did not set any value?
+-Since there no value set for the instance variable, getter will return the default value
+-NOTE: setters are usually used first to write value, then getters are used to read value
+String 	-> null
+Object 	-> null
+int 	-> 0
+double 	-> 0.0
+boolean	-> false
+char 	-> 
+Integer -> null
+Float 	-> null
+Boolean -> null
+Arrays 	-> null
+ArrayList -> null
+Scanner -> 
+
+
+INHERITANCE
+-Inheritance in Java is inheriting attributes and methods from one class to another. This will create "inheritance concept" between two classes
+-It can be achieved by extends keyword
+-To inherit from a class, use the extends keyword
+
+EXAMPLE
+class B{
+	
+}
+
+class A extends B{
+	
+}
+
+A -> child - sub -> the class extends to base class
+B -> parent - super - base -> the class that is extended by sub class
+
+
+WHAT CAN BE INHERITED FROM PARENT CLASS?
+-If both parent and child classes are in the same package
+	default, protected, public members can be inherited from parent to child
+-if parent and child classes are in the different packages
+	protected and public members can be inherited from to child
+-NOTE: private members CAN NEVER BE inherited whether child and parent in the same package or different
+
+
+Can a class extend to multiple classes?
+-NO, one class can only extend to one class
+
+Can a class be extended by multiple classes?
+-YES, one class can be extended by many other classes
+
+
+HOW CAN I PREVENT INHERITANCE?
+-make class final
+-final classes cannot be extended by any other class
+
+NOTE: In Java, class CAN NEVER BE private or protected
+
+
+METHOD OVERRIDING 
+-It is a concept of implementing a new body to an inherited method
+-It is common to use when we want to specify body in the child classes method. So, we override the parent class’ methods in child
+-@Override annotation is used to override a parent class’ method
+-NOTE: Object class is parent for the all classes in Java and that is why we can override methods of object class as well
+
+-Rules of Method Overriding
+-Method signature should be same (parameters and name)
+-Return type should be same 
+-Access modifier should be same or can be more accessible
+-@Override annotation is highly recommended to use in case of overriding but it is not mandatory
+
+
+Method overloading vs method overriding?
+-Method overriding is implementing a new body to an inherited method from parent class
+-Overriding methods can happen only when a child class inheriting a parent class
+-Overriding is writing same method from parent class with a different implementation (different body) in the child class
+
+
+-Method overloading is creating a method which has same name with another method in the class
+-Overloading happens in the same class with different parameters
+-Overloaded methods are sharing same name but different signature
+-Method overloading is not related to inheritance
+
+
+Why we need inheritance?
+-It is useful for code reusability: with the help of inheritance, we can reuse attributes and methods of a parent class when we create a new child class
+-In most of the case, most of the methods and attributes are already created in parent and we don’t need to create those again in child classes
+-By this way, we will be using common code with parent while we will create only some specific methods and attributes for the child classes
+
+
+
+
+
+
+
+
+
+

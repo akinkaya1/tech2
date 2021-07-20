@@ -1,0 +1,172 @@
+
+
+
+05/02/2021 - Java Operators - 2
+
+RECAP:
+
+Operators: special symbols that are used to perform some certain tasks
++ addition
+- subtraction 10 - 5 = 5
+*
+/
+%
+= -> assignment operator
+dataType variable = value;
+
+int age = "Fourty"; // compiler error
+
+String name = "Lionel"; // not compiler error 
+
+45 + 70 / (2+5) - 10 = 45
+
+Shorthand Assignment Operator
++=
+-=
+*=
+/=
+%=
+
+int age = 45;
+age += 5; // 50
+age += 5; // 55
+
+
+EXAMPLE/ pre-decrement
+int numberOfPhones = 50;
+
+double value = 100 * --numberOfPhones; //  4900
+
+System.out.println(numberOfPhones); // 49
+System.out.println(value); // 4900
+
+
+RELATIONAL OPERATORS
+-Relational operators are used to compare 2 expressions and returns a boolean
+
+-Relational operators always return either true or false
+
+< 	is used for less than
+<= 	is used for less than or equal to
+> 	is used for greater than
+>= 	is used for greater than or equal to
+== 	comparison -> checks if both sides are equal
+!= 	comparison (not equal) -> checks if both sides are not equal
+
+boolean b1 = 5 < 10;
+System.out.println(b1); // true
+
+EXAMPLES:
+
+10 <= 10   	-> true
+15 > 20 	-> false
+7 >= 7 		-> true
+
+-20 < -15 	-> true
+-20 > -15 	-> false
+-25 > 0 	-> false
+-30 > -1 	-> false
+
+== -> is used to compare if 2 things are equal to each other
+
+boolean b2 = (5 == 6);
+System.out.println(b2); //false
+
+25 == 25 	-> true
+-5 == -5 	-> true
+5.1 == 5.2 	-> false
+'A' == 'a' 	-> false   65 == 97  -> false
+"Adam" == "Adam" -> true
+"Adam " == "Adam" -> false
+
+boolean b3 = " Adam";
+
+
+!= -> is used to check if two values are no equal
+5.1 == 5.2 	-> false 
+5.1 != 5.2 	-> true
+
+'X' != 'Y' 	-> true
+"Raqi" != "Raqi" -> false
+"Raqi" != "Salih"-> true
+
+! NOT OPERATOR
+boolean b1 = !true;
+System.out.println(b1); // false
+
+boolean b1 = !false;  // true
+
+!(5.1 == 5.2)	-> true
+!(10 >= 10) 	-> false
+!(15 < 20) 		-> false
+
+
+Requirements:
+Find if the following statements are true or false
+Test data:
+int x = 10, y = 20, z = 10;
+
+Expected output:
+boolean b1 = y < z; returns false
+boolean b2 = x <= y; returns true
+boolean b3 = x >= z; returns true
+boolean b4 = y > x; returns true
+boolean b1 = x >= y; returns false
+boolean b1 = (x >= z) < y; compiler error
+
+true < 20 	-> compiler error
+'D' > 20 	-> true
+"Lionel" > 100 -> compiler error
+"D" > 20 	-> compiler error
+(int) "D" > 20 	-> compiler error
+
+
+LOGICAL OPERATORS
+-Check multiple conditions and returns true/false
+
+boolean b1 = (4 == 4) & (5 > 10);
+System.out.println(b1); // false
+
+true & true & true & false 	-> false
+Lionel is num & 1 is num & 2 is num & 3 is num  -> false
+
+If any condition is false with AND operator, then the full expression will be false
+
+boolean b2 = (5 < 4) | ( 4 > 3);
+System.out.println(b2); // true
+
+
+
+true & true & (true | false)  -> true
+
+false | false -> false
+
+AND OPERATOR
+true & true 	-> true
+true & false 	-> false
+false & true 	-> false
+false & false 	-> false
+
+-It will return true only if both conditions are true
+-It will return false if one or both conditions are false
+
+
+OR OPERATOR
+true | true 	-> true
+true | false 	-> true
+false | true 	-> true
+false | false 	-> false
+
+-It will return false only if both conditions are false
+-It will return true if one or both conditions are true
+
+
+false & true	-> false
+false && true 	-> false
+
+true | false 	-> true
+true || false 	-> true
+
+
+
+

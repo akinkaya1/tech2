@@ -1,0 +1,247 @@
+
+
+04/24/2021 - First Program - Primitives
+
+RECAP:
+COMMAND LINE
+-Terminal(Mac) or command prompt (Windows) is used to execute some specific with commands
+-Windows -> command prompt - powershell
+-directory = folder
+-PATH = location of a specific folder in your machine
+Windows -> C:\Users\userName\Desktop....
+Mac -> Users\userName\Desktop.....
+
+HOME DIRECTORY = this is where a users storage starts
+
+-COMMON COMMANDS 
+1. ls -> list  (dir for Windows) -> used to list all folders/files in the current directory
+
+2. pwd -> print working directory (cd for Windows)-> used to see current path (the location of the directory that you are working in)
+
+3. cd directoryName -> change directory -> used to move to a directory
+
+4. cd .. -> change directory to parent - up to the tree - one back
+
+5. cd / -> used to move back to the starting point
+
+6. mkdir -> make directory -> used to create directory (folder)
+
+7. rm -rf -> remove directory (rd for Windows) -> used to remove directory
+
+8. clear (cls for Windows) -> clears your cmd or terminal
+
+
+PROGRAMMING LANGUAGE
+-Java, C, C++, C#, JavaScript, Ruby
+-Programming languages are used to put real life problems into programming and bring a solution to those
+-Java is an Object-Oriented-Programming language: It puts real life problems into objects and in programming.
+-Java is platform-independent: Java runs in all type of machines-operatings system
+-This is happening thanks to JVM (Java Virtual Machine). JVM is where our actual java code runs.
+-BUT, JVM itself is platform-dependent. That is why we download JDK specific to our Operating System
+PLATFORM: Windows, Mac, Linux (Different OS)
+
+JAVA ARCHITECTURE
+-JDK: Java Development Kit: it consist of JRE, JVM and also development tools (javac, jconsole, jheap etc)
+-JRE: It comes within the JDK and stands for Java Runtime Environment. It contains JVM + all java classes and libraries
+-JVM: it stands for Java Virtual Machine. It is where our code actually run. It has JIT (Just in Time Compiler) to make execution time faster
+
+
+RUNNING A JAVA PROGRAM
+- To be able to run a program, we MUST compile it first
+- javac programName.java will compile the code
+- java programName will run the compiled code
+
+
+SOURCE CODE: actual code that is written by programmer by using a programming language
+EXAMPLE:
+
+public class MyFirstProgram{
+	public static void main(String[] args){
+		System.out.println("Hello World!");
+	}
+}
+
+BYTE CODE: it is source code compiled by java compiler and turn into byte code
+-Byte Code looks like -> A23B45C236472653CD
+
+BINARY CODE: it is ones and zeros. Byte code will be turned into binary code by JVM and used by machine
+
+
+Our code (source code)input -> compiled by javac -> byte code (.class file) -> java (execution) JVM -> binary code (machine understanding code) -> output(result)
+
+javac -> java compiler -> used to compile the source code
+java -> used to run the compiled code
+
+
+MAIN METHOD
+public static void main(String[] args) {
+	//this is main method
+	//All our code goes here, inside the main method block
+}
+-BLOCK-> {} opening and closing curly braces and we write all our code inside the blocks
+-in Java, every opening curly braces MUST BE closed
+
+-Main method is the way to run our programs
+-it is the starting point of the program
+-WE CANNOT RUN ANY CODE WITHOUT MAIN METHOD
+-JVM always look for this method signature to start running an application
+
+EXECUTE = RUN
+
+STATEMENT: every line of code is called statement in Java
+-Every statement must be ended with semi-colon (;)
+-Unwritten Rule: WRITE ONE STATEMENT PER LINE
+
+Good Code - Nice Code
+-Readable
+-Understandable
+
+// -> can be used to write commands-explanation for our code
+// -> is used for single line command
+
+/* */ -> is used for multiple lines of commands
+
+/*
+command
+command
+command
+*/
+
+
+System.out.println(); -> used to print some words
+-System class provides us a few useful methods and variables to use
+-out is the System’s static variable
+-println() is a method of System class that is used to print the given text or variable
+
+
+NAMING CONVENTION IN JAVA
+-Unwritten rules that are followed by programmers
+-package = folder
+-package naming -> it starts with lowerCase, then follow camelCase
+-class naming -> it starts with upperCase, then follow camelCase
+-CAMELCASE rule: making the first letters of each word upperCase and rest to be lowerCase
+
+NOTE: BOTH className and package names cannot be multiple words. They SHOULD be one word without space
+
+-My First Program -> MyFirstProgram (java way)
+
+GO TO FINDER
+-> command-shift-h -> takes you to your home directory
+
+
+JAVA FOLDER STRUCTURE
+-project -> tech2
+-packages -> they can have many other packages and classes
+-classes -> they holds java files - codes
+
+->project
+	->src
+		->package1
+			->package3
+				->Class4
+				->Class5
+			->package4
+			->Class3
+		->package2
+			->Class1
+			->Class2
+
+INTELLIJ
+-IntelliJ is one of the most popular IDE used for Java
+-IDE = Integrated Development Environment
+-It is a tool for us to write our Java code
+-It is integrated with useful tools like compiler, console, debugger, version control system and so on.
+-Compiler – it compiles the code we write and gives us feedbacks continuously
+-Console – it shows the result (output) of the program that we write
+-Similar tools: Eclipse, NetBeans
+
+
+
+PRIMITIVES
+-8 primitives: byte, short, int, long, float, double, boolean and char
+
+-4 of those are used to store numbers with no floating points - Example: 45, 60, 100, 0, -5000
+byte is used to store small numbers - capacity of 1 byte (8 bit)
+
+byte -> 1 byte -128 to 127
+short -> 2 bytes
+int -> 4 bytes
+long -> 8 bytes
+
+-2 of those primitives are used to store numbers that has floating points: float and double
+EXAMPLE/ 25.5, 132.30, -10.7, 100, 0
+
+float -> 4 bytes
+double -> 8 bytes
+
+-char: character
+-char is used to store a single character
+-all characters that we store in char primitive must in single quotation ''
+- char is allocating 2 bytes from the memory
+
+ALLOCATE = RESERVES
+
+-boolean: special primitive that holds the value of true or false
+-We will use this to control the flow of our programs
+-it allocates onlt 1 bit of memory
+
+EXAMPLES/ 'A', '=', 'b', '8', '$', ' ', 
+
+VARIABLE = it is a container that holds a piece of data
+IDENTIFIERS = names that are given to our classes, methods and variables
+
+byte myAge; -> myAge variable is created to store data
+myAge = 25; -> value assignment
+myAge = 45; -> value re-assignment
+
+NOTE: Variable names should always be unique and they are preferred to be started with lowerCase and follow camelCase rule
+
+There are 2 ways to store data
+1. declare first, then assign value in another line
+2. declare and initialize variable in the same line
+
+NOTE: = sign is used to assign value 
+-So, = (equal) sign is known as assignment operator
+
+
+
+NOTE: short-cut to call main 
+1. main + enter
+2. psvm + enter
+
+COMPILER ERROR: these are the errors IntelliJ shows us right away even before we run our program
+
+RUNTIME ERROR: these are the errors we got when we run the program
+
+
+
+JDK -> comes with so many libraries that has useful packages and classes
+-And each class has useful methods for us to use in our programs
+->packages: io, lang, math, util, time
+->class: System, String
+
+String class -> we are going use this to store multiple characters
+String: it is a sequence of characters
+-It must be in "" double quotation always
+EXAMPLES: "a", "", " ", "    ", "238745", "@#)$*"
+
+
+REFACTORING NAMES
+-right click on the member that you want to rename
+-select refactor from the menu
+-select rename from the new menu
+-Fix the name and hit enter
+
+DUBLICATE YOUR LINE OF CODE
+-we can use command+d for MAC
+-we can use ctrl+d for Windows
+
+
+
+
+
+
+
+
+
+

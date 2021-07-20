@@ -1,0 +1,111 @@
+
+
+
+07/12/2021 - OOP Part 2 - Polymorphism
+
+
+OPP Principles - Concepts
+1. Encapsulation
+2. Inheritance
+3. Abstraction
+4. Polymorphism
+
+-> Encapsulation : it provides data security and restrict direct access to the data
+
+-> Inheritance : it is sharing data by creating parent-child relationship between classes and it increases code reusability
+
+-> Abstraction : it is hiding implementation and showing only functionality to the user
+
+-> Polymorphism : it is one object being able to get into many shapes and it is achieved with inheritance
+
+There are 2 types of polymorphism
+1. Static polymorphism (static binding) - Compile-time Polymorphism
+-Java knows exactly which method it will invoke even before running the code
+
+2. Dynamic polymorphism (dynamic binding) - Runtime Polymophism
+-Java doesn't know which version of method implementation gets invoked until we run the code
+
+Example of static polymorphism = method overloading
+Example of dynamic polymorphism = method overriding
+
+
+POLYMORPHISM
+poly - many
+morp - shape/form
+
+polymorphism = many shapes/forms
+-it is one object being able to get into many shapes/forms and it is achieved with inheritance
+
+
+Animal
+
+Dog extends Animal
+
+Collie extends Dog
+
+-Inheritance is IS-A-RELATIONSHIP in Java
+The name for our Collie breed dog is Peanut
+
+Peanut is a Collie
+Peanut is a Dog
+Peanut is an Animal
+Peanut is an Object
+
+
+Animal has 2 behaviors eat(), sleep()
+Dog has 1 more behavior bark()
+Collie has 1 more behavior protect()
+
+
+Collie c1 = new Collie();
+c1.eat();
+c1.sleep();
+c1.bark();
+c1.protect();
+
+Up-casting: when reference is parent and object created is child
+NOTE: up-casting happens implicitly
+Dog d1 = new Collie();
+d1.eat();
+d1.sleep();
+d1.bark();
+d1.protect(); // this will not work - compiler error
+
+Up-casting
+Animal a1 = new Collie();
+a1.eat();
+a1.sleep();
+a1.bark(); // this will not work - compiler error 
+a1.protect(); // this will not work - compiler error
+
+Down-casting: when the reference is child and object being created is parent class
+NOTE: down-casting must be done explicitly
+
+Collie c2 = new Dog(); // compiler error
+Collie c2 = (Collie)new Dog(); // compiler error is resolved
+-but when you run this, you will get an ClassCastException as Runtime will find out the actual object created is Dog and Collie CAN NEVER HANDLE the Dog because Dog is the parent of Collie
+
+
+LinkedList<Integer> numbers = new LinkedList<>();
+poll(), peek(), getFirst(), getLast(), addFirst(), addLast()
+
+-When we create an object, reference of object can be all below:
+1. Itself
+2. Higher level super classes that the class is extending
+3. Interfaces that the class implementing
+
+-Polymorphism is not useful when creating very few Parent and Child classes in Java
+-It is meaningful when used with many parents and many child classes
+-One of the most important purpose of Polymorphism is using Polymorphic arrays
+-Polymorphic arrays: A collection which can store many different types in one array/collection
+
+
+
+
+
+
+
+
+
+
+

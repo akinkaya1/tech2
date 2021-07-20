@@ -1,0 +1,37 @@
+
+
+
+05/24/2021 - Practice 4 - String Methods and Loops
+
+LOOPS:
+-We have 4 loops in Java
+-For loop - i loop
+-While loop
+-For each loop (Collections)
+-Do while loop
+
+
+
+String s = "Apple"    -> String sreversed = "elppA"
+
+if(s.equalsIgnoreCase(sreversed)) {
+	System.out.println(s + " is palindrome");
+}
+else{
+	System.out.println(s + " is not palindrome");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

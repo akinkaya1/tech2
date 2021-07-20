@@ -1,0 +1,103 @@
+
+
+
+07/15/2021 - Enum - Recursion - Date - Singleton
+
+enum
+-An enum (enumeration) is a special class representing a group of constants (unchangeable variables, like final variables) like days, months etc.
+-To create an enum, use the enum keyword (instead of class or interface), and separate the constants with a comma
+-We can create enum in a class as well
+
+EX/
+public enum Days{
+	SUNDAY,
+	MONDAY,
+	TUESDAY,
+	WEDNESDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDAY
+}
+
+-values() method can be used to get all enum constants and we can get constants one by one to print/use with a for each loop
+
+
+
+Recursion
+-Recursion is the technique of making a function (method) call itself
+-Basically, one method is invoking itself 
+-Infinite recursion – method never stops calling itself
+-In the case of infinite recursion, we will get StackOverflowError
+
+-RECURSION IS JUST LIKE LOOP
+
+-Recursive method
+public void sum(){
+	sum();
+}
+
+
+Singleton Design Pattern
+-Singleton is a creational design pattern, which ensures that only one object of its kind exists and provides a single point of access to it for any other code
+-It is very commonly used with driver instance for Selenium scripts
+-It can be achieved by making constructor of the class private which prevents it to be instantiated anywhere else
+-This is useful when exactly one object is needed to coordinate actions across the system
+-This one object will be instantiated in the class and access will be given to it with a static get method
+
+
+public class Car{
+	private static Car car = new Car();
+
+	private Car(){
+
+	}
+
+	public static Car getCar(){
+		return car;
+	}
+}
+
+
+main(String[] args){
+	Car car1 = new Car(); // Compiler error
+	Car car1 = Car.getCar();
+	Car car2 = Car.getCar();
+}
+
+
+STEPS TO ACHIEVE SINGLETON
+1. make default contructor private and do not overload it
+2. create a private class object inside the class
+3. provide a get method to get the single object and this method MUST be static because object cannot be created anywhere
+
+
+
+
+Date Class
+- Date class can be used to get current time like 
+Thu Jul 14 22:33:41 CDT 2021
+
+We can format the date using SimpleDateFormat class and get below formats
+	yyyy-MM-dd	->	2021-07-15
+	MM/dd/yyyy	->	07/15/2021
+	dd-MMM-yyyy	-> 	15-Jul-2021
+	E, MMM dd yyyy	->	Thu, Jul 15 2021
+	hh:mm:ss a	->	08:33:27 PM
+	h:mm a 		-> 	8:37 PM
+	EEE 		-> 	Thu
+	EEEE 		-> 	Thursday
+
+For all formats visit below link
+https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+
+
+
+
+
+
+
+
+
+
+
+

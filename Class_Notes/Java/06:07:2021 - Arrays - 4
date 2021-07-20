@@ -1,0 +1,36 @@
+
+
+
+06/07/2021 - Arrays - 4
+
+Searching an array if it contains a particular element?
+-binarySearch() method to find out if our collection contains a specific element
+-Before calling binarySearch() method, we have to make sure that array is sorted - Arrays.sort()
+-it is a static method - Arrays.binarySearch()
+-it is a return type method and it returns an int which is the possible index of element that we are searching
+-if returned index is negative, then it means element does not exist in the array, otherwise we can say, element is found in the array
+-binarySearch() method takes 2 arguments, one is array, the other is the element that we are searching for
+
+SYNTAX:
+int number = Arrays.binarySearch(arrayName, element);
+
+
+split() method
+-it is a String class method
+-it is a return type and it returns a String array
+-it is a non-static method that is why we call it with a String object
+-It takes one regex parameter and we usually use it with    " " space to split String from its spaces
+
+
+toCharArray()
+-it is a String class method
+-it is a return type method and it returns a char array
+-it is a non-static method that is why we call it with a String object
+-it does not take any parameter
+
+
+
+
+
+
+

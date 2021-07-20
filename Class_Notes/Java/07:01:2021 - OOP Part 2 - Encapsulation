@@ -1,0 +1,63 @@
+
+
+
+07/01/2021 - OOP Part 2 - Encapsulation
+
+
+OOP PRINCIPLES
+1.Encapsulation
+2.Inheritance
+3.Abstraction
+4.Polymorphism
+
+
+CLASS MEMBERS
+1.Instance variables
+	-it is what object/class has
+
+2.Methods
+	-it is what object/class does
+
+3.Constructor
+	When we create a class, Java provides a default constructor for creating object
+	-Default constructor is not taking any argument
+	-Default constructor is public and it has same name as class
+	-All constructors MUST have same name as class name
+	-If you create a custom constructor, default one will be gone
+	-Default constructor does not have any statement
+	-Constructors CANNOT be static or final
+	-Constructors special methods but they CANNOT be return or void
+	-We can do constructor chaining (calling constructor in another constructor) by using this()
+4.Blocks
+
+1. ENCAPSULATION
+-REMEMBER: private instance variables CANNOT BE accessed from anywhere except the class it is created
+-With that, we can restrict direct access to the instance variables that stores sensitive data
+
+WHAT IS ENCAPSULATION?
+-Encapsulation is making sure that "sensitive" data is hidden from users - direct access is restricted
+
+HOW TO ACHIEVE ENCAPSULATION?
+1. Make instance variables private
+2. Provide public setters and getters methods
+
+Note: These public getters and setters' method will help us to access and update private instance variables
+
+WHY WE DO ENCAPSULATION?
+-Better control of data by public getter and setter methods
+-Class instance variables can be made read-only (if you only use the get method), or write-only (if you only use the set method)
+-Flexible: the programmer can change one part of the code without affecting other parts
+-Increased security of data
+
+
+
+
+
+
+
+
+
+
+
+
+

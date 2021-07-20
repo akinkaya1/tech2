@@ -1,0 +1,119 @@
+
+
+06/05/2021 - Arrays - 2
+
+RECAP:
+-Arrays are used to store multiple same data in one variable
+-In this manner, array is an collection
+-ELEMENT = each data stored in array is called as element
+
+SYNTAX: 
+dataType[] variableName = new dataType[length]; // 5
+dataType [] variableName = new dataType[length];
+dataType variableName[] = new dataType[length];
+
+variableName[3] = value;
+
+System.out.println(variableName); // location of the array in the memory
+
+toString() method takes the array and converts it to a String and returns that String
+
+String arr = Arrays.toString(variableName);
+
+System.out.println(arr);
+
+NOTE: When we declare an array, we need to define the length
+length is going to define how many elements we can store in the array
+
+HOW TO FIND THE LENGTH OF THE ARRAY?
+variableName.length -> will return the length of the array
+
+
+int 	-> 0
+byte 	-> 0
+short	-> 0
+long 	-> 0
+double 	-> 0.0
+float 	-> 0.0
+boolean -> false
+char 	-> nothing
+Objects -> null   (String, Integer, Boolean, Character)
+
+
+If we know what data we are going to store in an array at the beginning, then use below syntax
+
+Store 1, 5, 8, -15, 30 in array and print them
+
+int[] numbers = new int[]{1, 5, 8, -15, 30};
+int[] numbers = {1, 5, 8, -15, 30};
+
+
+SORTING ARRAYS
+-Strings -> Raqi, Maryna, Volkan
+Sort these names -> Maryna, Raqi, Volkan
+
+-Numbers -> smallest to greatest -> ascending
+
+-sort() method can be used to sort Arrays
+-sort() method is static and it takes an array, it sorts the array and return back the sorted array
+-Arrays.sort(anyArray);
+-sort() is a void method and does not return anything
+
+-Sorting an array means ordering elements inside an array
+-Sorting is very useful to find max and min int values
+-Arrays class has method called sort() and it can be used to sort array elements
+-Sorting can be used for String, char and other data types as well
+	- sorting numbers returns array sorted from smaller to bigger - ascending order
+	- sorting words or characters returns array sorted lexicographically 
+
+
+FOR EACH LOOP - ENHANCED FOR LOOP
+-For each loop is used to loop through each element in an array or any other collection.
+
+Syntax:
+for(dataType variableName: collectionReference){
+	// block of code to execute
+}
+
+EXAMPLE:
+
+String[] countries = {"Japan", "China", "US", "Germany"};
+
+for(String country: countries){
+	System.out.println(country);
+}
+
+RESULT OF THE EXAMPLE ABOVE:
+Japan
+China
+US
+Germany
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

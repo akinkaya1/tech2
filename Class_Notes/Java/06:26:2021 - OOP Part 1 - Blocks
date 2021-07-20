@@ -1,0 +1,111 @@
+
+
+
+06/26/2021 - OOP Part 1 - Blocks
+
+
+RECAP:
+-Any software application needs to put billions of information in a form that can be managed easily.
+-packages and classes are just folders - shelves that you store your data
+
+-CLASS MEMBERS:
+1.Attributes
+2.Methods
+3.Constructor
+4.Blocks
+
+
+CONSTRUCTOR:
+-It is a special method that is used to create objects
+-We cannot create object without constructor
+-Java provides default constructor once you create a new class
+DEFAULT CONSTRUCTOR
+public ClassName(){
+        
+}
+
+-Default constructor can be overloaded with different parameters. And these overloaded constructors are called as custom constructors.
+-If you create your own custom constructor, the default one will be gone.
+-After that, if you still want to create object with default constructor, you HAVE TO create default constructor explicitly
+-CUSTOM CONSTRUCTORS are created to give initial information for the object created
+
+-this is a reserved keyword in Java and used as reference to the current object of its type in a class
+-this() is used to call a custom constructor in another custom constructor and provides code reusability
+-this() must be the first statement in the constructor block it is called
+
+
+RULES:
+-its name must be same as class name
+-it is always used next to new keyword
+Scanner input = new Scanner(System.in);
+
+
+WHAT IS DIFFERENCE BT CONSTRUCTOR AND METHOD?
+-Constructors are special kind of methods that creates objects
+-Unlike methods, constructor cannot be void or return type
+-They always take same name as class
+-We can overload both methods and constructors
+-We can chain both methods and constructors but you cannot chain constructor in a method. You are allowed to call methods in constructors
+-Methods can be final and static but Constructors cannot be final or static
+
+
+
+4.BLOCKS
+-block in Java is known coding statements in opening and closing curly braces {}
+
+Syntax:
+-An instance block
+{
+	//coding statements
+}
+
+-Static block
+static {
+	//coding statements
+}
+
+--All other blocks that we use with methods, constructors, loops, if-else statements, switch statements are LOCAL BLOCKS
+
+ /*
+        EXECUTION ORDER
+        -JVM looks for main method()
+        -It start executing code line by line top to bottom and left to right
+        -When JVM sees a new object is getting created
+            -First, it checks if object class has any static block, if so, it execute static block first
+            -Secondly, before creating object, it also executes instance blocks if there are any
+            -Finally, object will get created
+            
+        -Static block is the first to be executed before anything else in the class 
+            and it is executed only once
+        -Instance blocks are executed after static blocks and before everything else 
+            and they are executed for each object being created
+         */
+
+
+-A block in Java is a set of code enclosed within curly braces { } within any class, method, or constructor
+-It begins with an opening brace { and ends with a closing braces }
+-Between the opening and closing braces, we can write codes which may be a group of one or more statements
+
+
+
+-Stack Heap
+-Access modifiers
+-OOP PRINCIPLES
+	Encapsulation
+	Inheritance
+	Abstraction
+	Polymorphism
+-Collections
+	Set -> HashSet, LinkedHashSet, TreeSet
+	Map -> HashMap, HashTable, LinkedHashMap, TreeMap
+
+-Exceptions
+-Files
+-Date class
+
+
+
+
+
+
+

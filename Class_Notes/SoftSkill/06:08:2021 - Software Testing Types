@@ -1,0 +1,45 @@
+
+
+06/08/2021 - Types of Software Testing-1
+
+Vrification: Checking the requirements document if it is clear and understandable. For example, we have wiki pages that have requirements.
+
+Validation: Checking if the actual product is matching the requirements.
+
+We cannot assume while we are testing the Software.
+
+Functinal Test: If the software functionality like login works based on the requirements.
+
+
+Testing types are very important for the interview. We need to know each testing types and when we perform them.
+
+Testing part:
+
+Left Shift Testing: While development is going on, I am writing my test cases and also developing my automation scripts to test the functionality even though the application is not ready. And I know my automatin is going to fail because development of the application is still on progress. 
+
+I am running my automation locally along the development. Each time new code added to application my test is also improved. And can keep running my aoutomation. If need I can modify my scripts.
+
+
+Development part:
+
+Unit Test: Developers are writing the unit test with source codes before they start develping the application. While developing they are running the their unit test to check how much of their code is passing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+
+
+
+06/24/2021 - OOP Part 1 - Constructors
+
+RECAP:
+
+Class: Blueprint or template where we create many objects from
+
+Object: It is an instance of class
+
+EXAMPLE:
+Class -> Dog
+Objects -> German Shepherd, Bulldog, Pitbull, Golden Retriever, Blue
+
+
+Class members:
+1.Attributes - fields - instance variables
+2.Methods - functions - behavior
+3.Constructors
+4.Blocks
+
+
+1. ATTRIBUTES
+-Instance variables of a class - state
+-Characteristics of each object
+-Answers to what object has?
+
+2. METHODS
+-functions or behavior of object
+-Answers to what object/class does?
+
+static and final
+static -> if a method or an instance is static, it means it belongs to the class, not to the instance of the class. So, they can be called by className
+
+final -> if an instance variable is final, then it means it has an initial value and this value cannot be changed
+A final method cannot be overridden***
+
+-We have 2 types of methods: return and void types
+
+
+3. CONSTRUCTORS
+-A constructor in Java is a special method that is used to initialize objects
+-Constructors have always same name as a ClassName they belong to
+-The constructor is called when an object of a class is created
+-It can be used to set initial values for object attributes
+-Object cannot get created without constructors
+-Constructors can be used only next to new keyword
+
+
+DEFAULT CONSTRUCTOR
+-it does not take any argument
+-it does not have any statements in the body
+-ALL CONSTRUCTORS CALLED WITH SAME NAME AS CLASSNAME
+
+CUSTOM CONSTRUCTORS
+-We can create our own constructors based on need and they are known as custom constructors
+-Custom constructors can have arguments and statements in the body
+-They are used to create object with initial values
+
+-Java will provide no argument constructor if we don't create one. That constructor is called Default Constructor
+-Default constructor is no-argument. It doesn't take anything
+-Constructors can be overloaded
+-We can have multiple constructors. Overloading constructors follow the same rules as method overloading
+-Why do we create custom constructor? We may give initial values for every object that is getting created
+
+
+NOTE: Java gives you default constructor unless you create a custom one
+
+BUT, once you create a custom constructor, then default one will be gone!!!
+
+If you still want to create object with default constructor and you have some custom constructors in the class, then you MUST explicitly create default constructor
+
+
+Local variables vs instance variables (fields)?
+-Local variables: variables that are created within the method. Scope for local variables: it stays within the method
+-Instance variables: variables that belongs to an object. The variables that are created right under the class. It can be used within the class
+-When we have instance variable and local variables which have same variable name, java accepts local variable as a priority
+-this keyword is a reference to the current object of its type
+-this keyword is useful when we have instance variable and method parameter with same name
+
+
+this() -> is used to call constructor in another constructor
+-It provides code reusability
+-This is known as constructor chaining
+-this() must be the first statement if it is used. Otherwise, it is compiler error
+
+
+
+
+
+
+
+
+
+
+
+
+

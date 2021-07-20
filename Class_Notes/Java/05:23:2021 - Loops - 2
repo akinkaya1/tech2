@@ -1,0 +1,103 @@
+
+
+
+05/23/2021 - Loops - 2
+
+RECAP:
+-We have 4 types of loops in Java
+	-For loop
+	-For each loop (Collection)
+	-While loop
+	-Do while loop
+
+-Loops are used to execute a block of code repeatedly
+-There should always be a termination point or termination condition
+-Loops are used to save time and effort and eliminates duplicated codes
+
+1. For loop 
+-Also known as traditional loop or i loop
+-Syntax:
+for(initialization; termination; update){
+	// execute a block of code
+}
+
+for(int i = 0; i <= 10; i++){
+	System.out.println(i);
+}
+	a. for loop MUST always have a initialization point
+	b. for loop MUST always have a termination condition (this condition is a boolean)
+	c. update - increment and decrement values
+
+	ITERATION: it is how many times your loop is going to run
+
+	INFINITE LOOP: It is a loop does not hit a termination point and runs forever
+
+2. While loop
+-It can be used when we cannot assume the exact iteration for the loop
+-It executes a block of code based on a condition (a boolean)
+-while the condition is true, it will execute the block
+-while loop will terminate when condition becomes false
+-Syntax:
+while(condition){
+	// execute a block of code
+}
+
+while(true){
+	System.out.println(true);
+}
+
+
+EX/
+print numbers from 20 to 30 (both included) -> 11 times - we can solve this with for loop
+
+print each chacarter in "Selenium" -> 8 times - we can solve this with for loop
+
+generate random numbers until you get 10 -> not certain - we can solve this with while loop
+
+
+3. Do while
+-While loop syntax:
+
+while(condition){
+	//run this code
+}
+
+-Do while loop syntax:
+
+do{
+	//run this code
+}
+while(condition);
+
+-This is very similar to while loop
+-However, it will execute the block of code at least once
+-It will first execute the block of code, then will check the condition
+-While condition is true, the block of code will be executed again
+
+
+-Loop control statements
+-These are break and continue keywords
+-They are used to control the flow of the program
+
+1. break;
+-break is used to terminate the loop
+-we used break to terminate switch before
+
+2. continue;
+-continue is used to skip only current iteration if a specified condition occurs, and continues with the next iteration in the loop
+
+NESTED LOOPS
+-Any loop statement can be used in another loop
+-Executing a loop inside another loop is known as nested loops
+-The first loop is known as outer loop, and the second one which is used inside the first one is known as inner loop
+-NOTE: we will cover for each loop once we learn Arrays as it is used with Arrays and other collections in Java
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,183 @@
+
+
+
+06/19/2021 - OOP Part 1 - Object and Class
+
+Class: is a blueprint or template from where we can create objects
+
+Object: is an instance of a class
+
+Class members: methods, attributes, constructor, blocks
+
+Some Java classes: String, Scanner, Arrays, ArrayList, Random, LinkedList, Math, Integer, Character, System
+
+Custom classes: RandomNumberGenerator, MathHelper
+
+
+How to create an Object:
+-Objects can only be created using "new" keyword
+-The purpose of "new" keyword in Java is to create objects
+className variableName = new className();
+
+Class -> Random
+Object -> Random myRandom = new Random();
+
+Random is a class and myRandom is an instance of the Random class
+
+
+JAVA IS AN OBJECT ORIENTED PROGRAMMING LANGUAGE
+-programming languages can be used to create software
+-Software is created to resolve real life problems
+-Java is an object-oriented programming
+-The core concept of the object-oriented approach is to break complex problems into smaller objects. So, Object-oriented simply known as an approach to programming that breaks a programming problem into objects
+-Everything in Java is associated with classes and objects
+-Different Java objects can interact with each other
+
+
+
+DATATYPES IN JAVA?
+-2 different data types in Java
+	Primitive types -> 8 like int, short, long, double
+	Reference types -> objects
+
+HOW TO CREATE A CLASS?
+Syntax:
+
+accessModifier class ClassName{
+	//class members
+}
+
+public class Car{
+	//class members
+}
+
+
+HOW TO CREATE AN OBJECT?
+Syntax:
+
+ClassName variableName = new ClassName();
+
+Car myCar1 = new Car();
+Car myCar2 = new Car();
+
+
+EXAMPLES:
+Class -> Car
+Objects -> BMW 335i, BMW X5, Mercedes C63AMG, Toyota Corolla, Ford Focus, Audi Q7, myCar, yourCar
+
+Class -> Food
+Objects -> Salad, steak, kebap, sushi, myFood, smoothie
+
+Class -> Restaurant
+Objects -> McDonalds, Subway, Chama
+
+
+Class -> Student
+Objects -> Salih, Raqi, Sarah, Volkan
+
+
+Attributes: What an object has
+Behaviors: What an object does
+
+-> Attributes: Name, LastName, DOB, Gender, Height, Weight, SSN, PhoneNumber, Email, Address
+
+-> Behaviors: study(), doHomework(), attendClass(), beLate(), askQuestions()
+
+
+Attributes - States - Fields - Instance variables
+Behaviors - Functions - Methods
+
+
+-Every class has its attributes and methods
+-Attributes are known as instance variables or fields
+-Methods are functions of that class
+
+For example:
+In real life, a car is an object. 
+The car has attributes, such as brand and color 
+And the car has methods, such as drive and brake.
+
+
+-Object is an instance of a class
+-Class is a template or blueprint from which objects are created. 
+-So, object is the instance(result) of a class
+
+EXAMPLE: if car is a class, then BMW can be an object of that class. BMW is known as instance of car class. Also, Audi is an instance of car class
+
+
+CLASS MEMBERS
+1.Attributes - fields
+
+-Class attributes are known as fields or instance variables of a class
+-Fields are used to store data
+-Fields can be accessed by objects of that class 
+For example:
+If car is a class, below can be its fields
+year, make, model, trim, color, etc.
+
+EXAMPLE
+public class Car {
+	//Instance variables of Car class
+	int year;
+	String make;
+	String model;
+	String trim:
+	String color;
+}
+
+NOTE: If we do not define some fields (information) for the objects created, they will get DEFAULT values of data types
+
+NOTE: These DEFAULT values can be decided by proggrammer as their need. To do this, we need to give an initial value when we declare instance variables
+
+
+
+CLASS & OBJECT
+Class: blueprint or template that we can create many object from
+
+Object: It is an instance of a class
+
+How to create class and objects of that class
+
+public class Car{
+	//all class member
+}
+
+Car car1 = new Car(); //
+Car car2 = new Car();
+
+Car car3; // declaration
+car3 = new Car();
+
+
+String name;
+name = "Lionel"; 
+
+
+4 Access modifiers -> public, protected, default, private
+
+
+CLASS MEMBERS: 4 members
+1.Attributes - fields - instance variables - states
+2.Methods - functions - behavior
+3.Constructor
+4.Blocks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

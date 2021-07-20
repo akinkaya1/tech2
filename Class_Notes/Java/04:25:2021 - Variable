@@ -1,0 +1,190 @@
+
+
+04/25/2021 - Variable
+
+RECAP:
+
+-JAVA ARCHITECTURE
+-JDK: Java Development Kit -> it holds JRE+JVM + development tools (compiler, heap, console etc)
+
+-JRE: Java Runtime Environment -> it holds JVM + classes + libraries
+NOTE: We cannot change anything with Java class and packages. They are read-only
+
+-JVM: Java Virtual Machine -> This is where our code runs. It has JIT (Just in Time Compiler) and JIT is used to speed up the execution time.
+-JVM itself is platform-dependent but it makes Java platform independent
+"WRITE ONCE RUN EVERYWHERE"
+
+-javac (java compiler) compiles the source code and converts it into byte code (specific to java) 
+-java is used to run the compiled code (byte code)
+
+normal flow -> source code -> binary code
+java way -> source code -> byte code -> binary code
+
+
+JAVA DATA TYPES
+-We have 2 types of data storing way in Java
+1.Primitive types
+2.Reference types <-> non-primitives <-> objects
+
+PRIMITIVES
+-We have 8 primitives to store specific data
+-byte: stores numbers and has 1 byte capacity
+-short: stores numbers and has 2 bytes capacity
+-int: stores numbers and has 4 bytes capacity
+-long: stores numbers and has 8 bytes capacity (L)
+long number1 = 45; // no need to put "L" here
+long number2 = 28735827364823L; // we need "L" here (compiler error)
+NOTE: we can use both "l" or "L"
+
+-float: stores floating numbers and has 4 bytes capacity
+float number3 = 25; //we don't need put f or F here
+float number4 = 34.67; // we have to put f or F (compiler error)
+-double: stores floating numbers and has 8 bytes capacity
+
+NOTE: int is the one we will mostly use in our programs
+double is the one we will mostly use in our programs
+
+-char: it stands for character and can store a single character. It allocates 2 bytes from the memory. It can't be empty and cannot store multiple characters
+
+-boolean: it allocates only 1 bit of memory, and stores true or false.
+
+NOTE: all primitives must be in lowerCase, DO NOT start them with upperCase
+
+-Wrapper classes: They are known as object representation of primitives
+Pritimive		Wrapper Class
+byte 			Byte
+short 			Short
+int 			Integer
+long 			Long
+float 			Float
+double 			Double
+boolean 		Boolean
+char 			Character
+
+String -> it is a Java class and can be used to store a sequence of characters
+
+NOTE: 
+char can be used with single quotation ''
+String can be used used with double quotation ""
+char c = 'Q';
+String name = "Lionel";
+
+
+VARIABLE
+-it is special container that stores a piece of data
+-Variable: reserved or allocated memory for the data 
+Example/ int age = 25;   
+variableName = age
+variableDataType = int;
+value = 25;
+
+double balance = 200.5;
+variableName = balance;
+dataType = double;
+value = 200.5;
+
+String name = "Lionel";
+variableName = name
+dataType = String
+value = "Lionel";
+
+
+VARIABLE NAMING
+-We can use only characters from ‘a’ to ‘z’, ‘A’ to ‘Z’, numbers from ‘0’ to ‘9’, character ‘_’, and character ‘$’ for naming the variables
+-We CANNOT name variables starting with digits (compiler error)
+-Variable names CANNOT have spaces (multiple words is not allowed)
+-UNWRITTEN RULES: variable names can be all uppercase or all lowercase or they can start with uppercase BUT none of these preferred by programmers
+	-> they start with lowercase
+	-> we follow camelCase rule
+-under score or dollar sign (_ or $) are the only special chars that are allowed to be used in naming variables, and they can be used at the very beginning as well
+-All other special chars cannot be used in variable names (compiler error)
+
+-Lowercase letters and uppercase letters are different and java is case-sensitive. That is why if the variable names are not exactly same, we will not get any compiler errors
+Example/ we can have int age or int AGE at the same time
+
+NOTE: WE CAN NEVER HAVE 2 VARIABLES WITH THE SAME, EVEN IF THE DATA TYPE IS DIFFERENT
+
+String age = "45";
+int age = 45; // compiler error
+
+
+
+EXAMPLES:
+int age;					-> true
+byte AGE;					-> true
+short shift$;				-> true
+byte number of students;	-> false
+char _firstLetter;			-> true
+int 8students; 				-> false
+boolean isWheatherSnowing#; -> false
+double @balance; 			-> false
+
+NOTE: when we give number values to numeric primitive types, we can use under score to make it more readable by separating every three digits
+
+EXAMPLE/ double balance = 12_345_345.00;
+
+
+VARIABLE DECLARATION - ASSIGNMENT - RE-ASSIGNMENT - INITIALIZATION
+
+int age; -> declaration -> allocating memory 
+age = 45; -> assignment -> is putting a value in allocated location
+
+String name = "Lionel"; -> declaration and assigment
+-> declaring a variable and initializing it with an initial value
+
+int myFavNumber = 7;
+myFavNumber = 10; // re-assignment
+
+1. 	dataType variableName;
+	variableName = value;
+
+2.	dataType variableName = value;
+
+= (equal) sign is used to do assignment all the time 
+
+DECLARING MULTIPLE VARIABLES IN THE SAME LINE
+-Java allows to declare and initialize multiple variables in the same statement
+		int age1, age2;
+		byte number1 = 10, number2 = 20, number3 = 50;
+-Many variables can be declared in the same statement if they are all same type
+	int num1, num2, num3 = 45, num4, num5;
+
+
+Exercise:
+boolean b1, b2;			-> true
+int i1 = 45, i2;		-> true
+double d1, double d2; 	-> false
+byte b1; byte b2;		-> true
+int i3; i4; 			-> false
+
+
+JAVA NAMING CONVENTION
+-package in java should be in lowercase letters like java.lang
+-class name should start with uppercase letter like System
+-method() name should start with lowercase letter println()
+-Variable name should start with lowercase letter and follow camelCase rule like numberOfStudent
+
+
+JAVA KEYWORDS
+-Reserved for java
+-Examples: byte, short, long, boolean, public, static, void,
+package, class
+-Those reserved keywords cannot be used to name any variable, package, class or methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

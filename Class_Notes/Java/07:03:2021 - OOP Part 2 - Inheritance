@@ -1,0 +1,182 @@
+
+
+
+07/03/2021 - OOP Part 2 - Inheritance
+
+
+OOP PRINCIPLES
+1.Encapsulation
+2.Inheritance
+3.Abstraction
+4.Polymorphism
+
+ENCAPSULATION
+-Encapsulation is making sure that "sensitive" data is hidden from users
+-We need encapsulation to protect instance variables from being accessed directly
+
+HOW TO ACHIEVE ENCAPSULATION?
+Step 1: make your sensitive data (instance variable) private
+Step 2: provide public getters/setters for these data
+Note: These public getters and setters' method will help us to access and update private fields
+
+WHY WE DO ENCAPSULATION?
+-Increased security of data
+-Better control of class attributes and methods
+-Class attributes can be made read-only (if you only use the get method), or write-only (if you only use the set method)
+
+
+GETTERS / SETTERS
+-getters are always return type of method
+-getters are named as getInstanceVariableName()
+-getters are not taking any argument
+
+-setters are always void type of method
+-setters are named as setInstanceVariableName()
+-setters must take an argument and set this value to the instance variable
+-We use this keyword with instance variable and assign whatever value comes from local variable
+
+Instance variables are the ones that belongs to the class and they can be used anywhere in the class but local variables are the ones that are created in a block and they can be only used in that block
+
+INHERITANCE
+-Inheritance in Java is inheriting class members from one class to another. This will create "inheritance concept" into two classes
+-To achieve inheritance, we use extends keyword
+-extends keyword between two classes creates a parent-child relationship for these classes
+-subclass (child) - the class that inherits from super (parent) class
+-superclass (parent) - the class being inherited by sub (child) class
+-parent class is also known as base class
+
+EXAMPLE
+public class Object{
+	
+}
+
+public class Creatures extends Object{
+	
+}
+
+public class Animal extends Creatures{
+	
+}
+
+public class Human extends Creatures{
+	
+}
+
+
+public class Programmer extends Human{
+	
+}
+
+public class Singer extends Human{
+	
+}
+
+public class Dancer extends Human{
+	
+}
+
+-This makes Human class parent and Programmer class child
+-Programmer can inherit some class members of Human class
+-AND, this increases code reusability 
+-CODE REUSABILITY - DO NOT DUPLICATE THE CODE
+
+Can child class extend to more than one parent class?
+-NO, a child class can extend to ONLY ONE parent class
+
+Can parent class have multiple child classes?
+-YES, one class can be inherited by multiple child classes 
+
+NOTE: Object class in Java is parent of all classes by default and that's why, every object will have Object class methods like toString(), getClass(), wait(), clone() etc.
+
+Programmer(17) - Human(16) - Creature(12) - Object(10)
+
+
+What is IS-A-RELATIONSHIP in Java?
+-It is known as inheritance
+-Programmer is a Human
+-Programmer is a Creature
+-Programmer is an Object
+-Human is a Creature
+-Creauture is an Object
+
+What is HAS-A-RELATIONSHIP in Java?
+-It is not inheritance and it has nothing to do with inheritance
+-There is no child-parent relationship between 2 classes but there is connection between them
+-Author - Book
+-Author has Book
+-Book has Author
+
+
+Inheritance - WHAT CAN BE INHERITED FROM PARENT CLASS?
+-instance variables and methods and constructors
+-if parent and child classes are in different packages, then only public and protected members can be inherited 
+-if parent and child classes are in the same package, then  public, protected and default members can be inherited 
+NOTE: private members CAN NEVER be inherited
+-private members CAN ONLY be used in the same class and with/without inheritance, they cannot go outside of the class
+
+
+HOW TO PREVENT A CLASS BEING INHERITED?
+-ANSWER: making class final with final keyword will prevent it to be inherited by any other class
+-final class can never be parent
+-Class cannot be private and protected
+-Class can only be default and it means this class can only be used in the same package
+-Class can be public and be used anywhere in the project
+
+final keyword
+-final instance variables: you have to initialize it, and the value will never change
+-final class: it cannot be inherited / it cannot be parent
+-final method: it cannot be overridden in child class
+
+
+METHOD OVERRIDING
+-It is a concept of implementing a new body to an inherited method
+-The method name, return type and arguments must be same
+-And body should be different, otherwise it does not make sense to overridw
+-THE PURPOSE OF OVERRIDING A METHOD: It is common to use when we want to specify body in the child classes method. So, we override the parent class’ methods in child
+-@Override annotation is used to override a parent class’ method but it is optional
+
+
+RULES FOR OVERRIDING A METHOD
+-Method signature should be same (parameters and name)
+-Return type should be same 
+-Access modifier should be same or can be more accessible for the child class method
+-@Override annotation is highly recommended to use in case of overriding but it is not mandatory
+
+method signature = name + args
+
+
+HOW TO PREVENT A METHOD TO BE OVERRIDDEN?
+-making parent class method final prevents it to be overridden in any child class
+
+
+WHAT IS THE DIFFERENCE BT OVERLOADING AND OVERRIDING A METHOD?
+-Overloading is creating a new method in the same class with same name but different arguments
+-Overriding is related to inheritance and there is child and parent classes. Overriding happens in child class and child class is changing the body of parent class method
+-Overriding methods can happen only when a child class inheriting a parent class
+-Overriding is writing same method from parent class with a different implementation in the child class
+
+
+WHY WE NEED INHERITANCE? WHY WE ARE USING INHERITANCE?
+-It is useful for code reusability: with the help of inheritance, we can reuse attributes and methods of a parent class when we create a new child class
+-In most of the cases, most of the methods and attributes are already created in parent and we don’t need to create those again in child classes
+-By this way, we will be using common code with parent while we will create only some specific methods and attributes for the child classes
+
+
+this vs this()
+-this keyword is a reference to current class’ object
+-this() is used to chain constructors and call one constructor in another constructor of the same class
+-super keyword is a reference to an object of super class
+-super() is used to call super class constructor
+-super() and this() must be on the first statement in the constructor if they are used to call overloaded constructors
+
+
+
+
+
+
+
+
+
+
+
+

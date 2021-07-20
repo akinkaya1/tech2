@@ -1,0 +1,208 @@
+
+
+05/08/2021 - If else statements
+
+RECAP: Casting
+-Casting happens bt primitives and it is known as assigning one value of primitive into another
+
+double balance = 100;
+
+spend $10 per day, find how many days later, your balance will be zero?
+
+int days = int(100/10);  // explicit casting
+
+int quarters = 20; // find how much is that
+
+double valueOfQuarters = 20/4; // implicit casting
+
+
+-There are 2 types of casting bt primitives
+1. Implicit -> (upcasting or widening) assigning a smaller data type value into a bigger data type 
+byte - short - char - int - long - float - double
+
+2. Explicit -> (downcasting or narrowing) assigning a bigger data type value into a smaller data type
+double - float - long - int - char - short - byte
+
+-boolean is out of scope in the casting. It cannot be converted to any other data type
+
+CASTING CHARACTERS TO NUMBERS AND VISA VERSA
+-If we cast char to int
+char c = 'X';
+int i = c; // implicit ( i will take 88)
+
+int i2 = 105;
+char c2 = (char)i2; // explicit (c2 will take 'i')
+
+
+CONVERTING PRIMITIVES TO STRING AND VISA VERSA
+1.Convert primitives to String
+
+Ex/ 
+int days = 100; // number
+
+1st way to convert it - concatenation with empty String
+
+String sDays1 = "" + days; // text
+
+2nd way to convert it - String.valueOf() method
+String sDays2 = String.valueOf(days); // text
+
+2. Convert String to primitives
+Ex/
+
+String isWeatherNice = "true"; // text
+boolean b1 = Boolean.parseBoolean(isWeatherNice); //
+boolean b2 = Boolean.valueOf(isWeatherNice); 
+
+String balance = "100.59"; // text
+double d1 = Double.valueOf(balance); // Object
+double d2 = Double.parseDouble(balance); // primitive
+
+
+-The difference bt parseType() and valueOf() methods
+-> parseType() always returns a primitive
+-> valuOf() always returns an Object
+
+AUTOBOXING (BOXING) - UNBOXING
+Autoboxing -> storing primitive value into its Object representation
+Ex/
+int age = 45;
+Integer i = age; // autoboxing
+
+Unboxing -> storing Object value into its primitive representation
+Double balance = 45.99;
+double d = balance;
+
+-var keyword
+-var keyword allows local variable type inference, which means the type for the local variable will be inferred by the compiler
+-With that, it is not necessary to declare data type!
+
+
+
+1. If Statement
+- if or else statements are used to control the flow of the program based on conditions
+
+Syntax:
+if(condition){
+	//Block of code here
+}
+
+Block -> each opening and closing curly braces
+
+-Check condition 	-> if true, go in the block and execute all the code
+					-> if false, do not go into block and continue after if statement
+
+NOTE: condition MUST always be true or false
+any other data type value will be compiler error
+
+2. if else statements
+-Java if-else statement is also used to test the condition. 
+-It controls the flow of the program based on the condition and executes the statement if condition is true.
+
+Syntax:
+if(condition) {  
+	//code to be executed
+ }
+else{  
+	//another code to be executed
+ }
+
+ NOTE: We are 100 percent sure one of the blocks will be executed
+ if condition is true, if block will be executed
+ if condition is false, else block will be executed
+
+
+OPPORTUNITY COST
+-Now you are here
+-Sleep, nice breakfast, biking, hiking, movie, money
+
+boolean raqiGivenAnOption = false;
+
+if(raqiGivenAnOption){
+	// sleep
+}
+else{
+	//at school
+}
+
+
+EVEN NUMBER
+-it is a number that can be divided by 2
+0, 2, 4, 6, 8, -4, -16
+
+ODD NUMBER
+-it is a number that cannot be divided by 2
+1, 3, 5, 7, -1, -5, -67
+
+Even => number % 2 == 0 or number % 2 != 1
+Odd => number % 2 != 0 or number % 2 == 1
+
+DEBUGGER
+-What is debugging or trouble-shooting: it is effort to find the root cause of an issue
+-So, whenever we got an error or any issue with our code or application, we do debug or trouble-shoot
+-This is step by step (line by line) executing our code and watching the result. And, by this way, it will be easier to see which line and code is causing an issue
+
+HOW TO DEBUG
+1. put a breakpoint to the line that you want to start debugging
+2. Then, run program in with debug button
+3. execute lines one by one by using "Step Over" button in debugger section
+4. And watch your results
+5. Remove breakpoint after debugging
+
+POSITIVE NUMBERS: numbers that are greater than zero
+NEGATIVE NUMBRES: numbers that are less than zero
+NEUTRAL NUMBER: it is zero
+
+
+if else examples
+String day = "";
+
+if(day is Saturday || day is Sunday){
+	// it is weekend
+}
+else{
+	// it is weekday
+}
+
+int number = 15;
+if(number % 2 == 0){
+	// EVEN
+}
+else{
+	// ODD
+}
+
+if(number % 2 == 1){
+	// ODD
+}
+else{
+	// EVEN
+}
+
+boolean isThereASoccerGame = true;
+
+if(isThereASoccerGame){
+	// We are going to watch the game
+}
+else{
+	// we are going to go out
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

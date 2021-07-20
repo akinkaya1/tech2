@@ -1,0 +1,102 @@
+
+
+
+04/22/2021 - Introduction to Java and First Program
+
+-Computer is a machine that takes instructions from users, process and returns soome output.
+-It is machine that does what ever we tell
+
+
+-Terminal (Mac) or command prompt (Windows) is used to execute specific tasks over machine
+
+java -version -> is to check what java version you have on your machine
+
+javac -version -> is to check what java compiler version you have on your machine
+
+javac -> java compiler
+
+
+Home Directory -> first directory opens on terminal or command prompt
+
+A home directory is a file system directory on a multi-user operating system containing files for a given user of the system.
+
+
+COMMON COMMANDS
+1. ls -> dir for Windows
+-it shows the list of folders/files in the working directory
+
+2. pwd -> cd for Windows
+-print working directory -> it shows us which directory we are working on 
+-SEE WHERE YOU ARE
+
+3. cd directoryName -> change directory
+- it is used to navigate to specified directory
+
+PATH -> /Users/techglobal/Desktop/MyDirectory
+it is the address of specific folders stored
+
+4. cd .. -> move up to the tree (to parent directory)
+-it ise used to navigate back to parent directory
+
+5. cd / -> 
+-it is used to move up to starting directory
+
+6. clear - cls fow Windows
+-it is use to clear terminal or command prompt
+
+7. mkdir directoryName -> make directory
+-it is used to create directory (folder)
+-to name directory with multiple words, use ""
+Example/ mkdir "My New Folder"
+
+-to create multiple folders at the same time, give space and don't use double quotation ""
+Example/ mkdir Apple Orange Banana
+
+8. rm -rf -> rmdir/s/q
+-it is used to remove directories
+
+
+PROGRAMMING LANGUAGE
+-Set of rules to tell computer what to do
+-Programing languages lack ambiguity
+Example: I saw the man with a telescope. Who has the telescope? Example: May I borrow some milk? Computer will not understand some!!!
+-SYNTAX: it is the grammar of programming language and we have to follow all syntax rules
+
+Programming Languages:  C, C++, C#, Ruby, Java, Pyhton
+						JavaScript
+
+Operating System: Windows, MAC, Linux
+-Java can run in all of those operating systems, that is why it is platform independent
+-Java is platform independent thanks to JVM (Java Virtual Machine)
+
+"WRITE ONCE RUN EVERYWHERE"
+-Java is one of the most demanded programming languages in the field
+-Java is easy to learn
+-There is huge community that supports java learners
+-Java can be used for web and Android mobile application, games etc.
+
+
+RUNNING FIRST JAVA PROGRAM
+-to compile the code-> javac directoryName.java
+-to run the code-> java directoryName
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
